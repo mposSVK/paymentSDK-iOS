@@ -46,7 +46,7 @@ DESC
 
         ss.dependency            'AFNetworking', '~> 3.2.1'
         ss.dependency            'CMPopTipView', '~> 2.3.2'
-        ss.dependency            'CocoaLumberjack', '~> 3.4.2'
+        ss.dependency            'CocoaLumberjack', '~> 3.6'
         ss.ios.dependency        'Lockbox', '~> 3.0.6'
         ss.dependency            'Mantle', '~> 2.1.0'
         ss.ios.dependency        'MBProgressHUD', '~> 1.1.0'
