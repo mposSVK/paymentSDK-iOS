@@ -36,6 +36,7 @@ FOUNDATION_EXPORT const unsigned char WDeComVersionString[];
 #import <WDeCom/WDECAnimatedCardView.h>
 #import <WDeCom/WDECButton.h>
 #import <WDeCom/WDECLabel.h>
+#import <WDeCom/WDECHeaderLabel.h>
 #import <WDeCom/WDECSubmitButton.h>
 #import <WDeCom/WDECCancelButton.h>
 #import <WDeCom/WDECCancelButtonImage.h>
@@ -48,6 +49,7 @@ FOUNDATION_EXPORT const unsigned char WDeComVersionString[];
 #import <WDeCom/WDECScannerBrackets.h>
 #import <WDeCom/WDECScannerCancelButton.h>
 #import <WDeCom/WDECScannerFlashlightButton.h>
+#import <WDeCom/WDECScannerNavigationBar.h>
 #import "WDeCom/WDECCardScannerHelpLabel.h"
 #import <WDeCom/WDECScannerGalleryButton.h>
 #import <WDeCom/WDECCardScannerTitleLabel.h>
@@ -58,3 +60,5 @@ FOUNDATION_EXPORT const unsigned char WDeComVersionString[];
 #import <WDeCom/WDECTextfield.h>
 #import <WDeCom/WDECCardTextField.h>
 #import <WDeCom/WDECView.h>
+#import <WDeCom/WDECCameraAccessLabel.h>
+#import <WDeCom/WDECCameraAccessButton.h>

@@ -10,6 +10,10 @@
 
 @interface WDECAnimatedCardFieldScanner : WDECAnimatedCardField
 
+@property (nonatomic, copy, null_resettable) NSString *min_last_year;
+
+@property (nonatomic, copy, null_resettable) NSString *max_last_year;
+
 /**
  *  @brief The scanToolbarButton title.
  *  @details Title customization option. The default is nil, the toolbar button shows the default "Scan" title. If set custom title the toolbar button replace the title.

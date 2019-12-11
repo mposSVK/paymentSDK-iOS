@@ -10,6 +10,10 @@
 
 @interface WDECCardFieldScanner : WDECCardField
 
+@property (nonatomic, copy, null_resettable) NSString *min_last_year;
+
+@property (nonatomic, copy, null_resettable) NSString *max_last_year;
+
 /**
  *  @brief The CardField scanner button image.
  *  @details Image/icon customization option. The default is nil, the CardField button shows the default bundle image. If set custom image the CardField replace the default image with a new one.

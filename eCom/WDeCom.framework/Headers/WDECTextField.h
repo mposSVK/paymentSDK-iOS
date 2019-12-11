@@ -33,14 +33,14 @@ typedef NS_ENUM(NSUInteger, WDECCardIconsStyle) {
 @property (nonatomic) UIColor *placeholderColor UI_APPEARANCE_SELECTOR;
 @property (nonatomic, weak, nullable) id<WDECTextFieldDelegate> delegate;
 
-@property (nonatomic, strong, nullable) IBInspectable UIImage *leftImage;
+@property (nonatomic, strong, nullable) /*IBInspectable*/ UIImage *leftImage;
 @property(nonatomic) WDECCardIconsStyle iconsStyle UI_APPEARANCE_SELECTOR;
 @property (nonatomic) UIColor *underlineColor UI_APPEARANCE_SELECTOR;
 @property (nonatomic) UIColor *underlineEditingColor UI_APPEARANCE_SELECTOR;
 @property (nonatomic) UIColor *errorColor UI_APPEARANCE_SELECTOR;
-@property (nonatomic) IBInspectable BOOL animatesPlaceholder;
-@property (nonatomic) IBInspectable CGFloat underlineHeight;
-@property (nonatomic) IBInspectable CGFloat underlineEditingHeight;
+@property (nonatomic) /*IBInspectable*/ BOOL animatesPlaceholder;
+@property (nonatomic) /*IBInspectable*/ CGFloat underlineHeight;
+@property (nonatomic) /*IBInspectable*/ CGFloat underlineEditingHeight;
 
 - (void)hideText;
 - (void)showText;

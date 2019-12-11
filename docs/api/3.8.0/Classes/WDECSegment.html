@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>WDECSegment Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/prism.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/format.js"></script>
+	<script src="../js/prism.js" data-manual></script>
+	<script>
+		jQuery.noConflict();
+		jQuery( document ).ready(function( $ ) {
+ 			$("pre code").each(function(i, block) {
+				$(this).addClass("language-objectivec")
+				$(this).formatObjectiveC();
+			});
+
+			Prism.highlightAll()
+		});
+	</script>
+
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">WDeCom </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Wirecard AG</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/arrivalAirportCode">arrivalAirportCode</option>
+		
+		<option value="//api/name/arrivalCityCode">arrivalCityCode</option>
+		
+		<option value="//api/name/arrivalDate">arrivalDate</option>
+		
+		<option value="//api/name/carrierCode">carrierCode</option>
+		
+		<option value="//api/name/currency">currency</option>
+		
+		<option value="//api/name/departureAirportCode">departureAirportCode</option>
+		
+		<option value="//api/name/departureCityCode">departureCityCode</option>
+		
+		<option value="//api/name/departureDate">departureDate</option>
+		
+		<option value="//api/name/fareBasis">fareBasis</option>
+		
+		<option value="//api/name/fareClass">fareClass</option>
+		
+		<option value="//api/name/flightNumber">flightNumber</option>
+		
+		<option value="//api/name/stopOverCode">stopOverCode</option>
+		
+		<option value="//api/name/taxAmount">taxAmount</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">WDECSegment Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>WDECSegment.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/carrierCode" title="carrierCode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/carrierCode">&nbsp;&nbsp;carrierCode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The 2-letter airline code (e.g. LH, BA, KL) supplied by IATA for each leg of a flight.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><pre><code>@property (strong, nonatomic) NSString *carrierCode</code></pre></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Carrier code</p><p>Max. length 3. It is optional.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECSegment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/departureAirportCode" title="departureAirportCode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/departureAirportCode">&nbsp;&nbsp;departureAirportCode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The departure airport code. IATA assigns the airport codes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><pre><code>@property (strong, nonatomic) NSString *departureAirportCode</code></pre></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Departure airport code</p><p>Max. length 3. It is optional.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECSegment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/departureCityCode" title="departureCityCode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/departureCityCode">&nbsp;&nbsp;departureCityCode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The departure city code of the itinerary segment. IATA assigns the airport codes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><pre><code>@property (strong, nonatomic) NSString *departureCityCode</code></pre></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Departure city code</p><p>Max. length 32. It is optional.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECSegment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/arrivalAirportCode" title="arrivalAirportCode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/arrivalAirportCode">&nbsp;&nbsp;arrivalAirportCode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The arrival airport code of the itinerary segment. IATA assigns the airport codes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><pre><code>@property (strong, nonatomic) NSString *arrivalAirportCode</code></pre></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Arrival code</p><p>Max. length 3. It is optional.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECSegment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/arrivalCityCode" title="arrivalCityCode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/arrivalCityCode">&nbsp;&nbsp;arrivalCityCode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The arrival city code of the itinerary segment. IATA assigns the airport codes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><pre><code>@property (strong, nonatomic) NSString *arrivalCityCode</code></pre></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Arrival city code</p><p>Max. length 32. It is optional.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECSegment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/departureDate" title="departureDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/departureDate">&nbsp;&nbsp;departureDate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The departure date for a given leg.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><pre><code>@property (strong, nonatomic) NSDate *departureDate</code></pre></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Departure date</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECSegment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/arrivalDate" title="arrivalDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/arrivalDate">&nbsp;&nbsp;arrivalDate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The arrival date of the itinerary segment. IATA assigns the airport codes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><pre><code>@property (strong, nonatomic) NSDate *arrivalDate</code></pre></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Arrival date</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECSegment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/flightNumber" title="flightNumber"></a>
+	<h3 class="method-title"><code><a href="#//api/name/flightNumber">&nbsp;&nbsp;flightNumber</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The city of the address of the airline transaction issuer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><pre><code>@property (strong, nonatomic) NSString *flightNumber</code></pre></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Flight number</p><p>Max. length 6. It is optional.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECSegment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fareClass" title="fareClass"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fareClass">&nbsp;&nbsp;fareClass</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Used to distinguish between First Class, Business Class and Economy Class, but also used to distinguish between different fares and booking codes within the same type of service.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><pre><code>@property (strong, nonatomic) NSString *fareClass</code></pre></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Fare class</p><p>Max. length 3. It is optional.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECSegment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fareBasis" title="fareBasis"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fareBasis">&nbsp;&nbsp;fareBasis</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Represents a specific fare and class of service with letters, numbers, or a combination of both.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><pre><code>@property (strong, nonatomic) NSString *fareBasis</code></pre></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Fare basis</p><p>Max. length 6. It is optional.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECSegment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopOverCode" title="stopOverCode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopOverCode">&nbsp;&nbsp;stopOverCode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>0 = allowed, 1 = not allowed</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><pre><code>@property (strong, nonatomic) NSString *stopOverCode</code></pre></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Stop over code</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECSegment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currency" title="currency"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currency">&nbsp;&nbsp;currency</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The currency of tax amount.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><pre><code>@property (strong, nonatomic) NSString *currency</code></pre></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Currency</p><p>It is mandatory if tax amount is specified.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECSegment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/taxAmount" title="taxAmount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/taxAmount">&nbsp;&nbsp;taxAmount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The amount of the value added tax levied on the transaction amount in the specified <a href="#//api/name/currency">currency</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><pre><code>@property (strong, nonatomic) NSDecimalNumber *taxAmount</code></pre></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Tax amount</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECSegment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Wirecard AG. All rights reserved. Updated: 2019-12-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

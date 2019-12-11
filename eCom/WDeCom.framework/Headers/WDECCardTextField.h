@@ -19,7 +19,7 @@
 @end
 
 
-IB_DESIGNABLE
+/*IB_DESIGNABLE*/
 @interface WDECCardTextField : UITextField <WDECLocalizable, WDECVerifiable>
 
 @property (nonatomic, weak, nullable) id<WDECCardTextFieldDelegate> delegate;
@@ -31,23 +31,23 @@ IB_DESIGNABLE
  *  @brief The text placeholder color used in each child field.
  *  @details Default is [UIColor lightGreyColor]. Set this property to nil to reset to the default.
  */
-@property (nonatomic, copy, null_resettable) IBInspectable UIColor *placeholderColor;
+@property (nonatomic, copy, null_resettable) /*IBInspectable*/ UIColor *placeholderColor;
 
 /**
  *  @brief The text color to be used when entering valid text.
  *  @details Default is [UIColor blackColor]. Set this property to nil to reset to the default.
  */
-@property (nonatomic, copy, null_resettable) IBInspectable UIColor *textDefaultColor;
+@property (nonatomic, copy, null_resettable) /*IBInspectable*/ UIColor *textDefaultColor;
 
 /**
  *  @brief The text color to be used when the user has entered invalid information, such as an invalid card number.
  *  @details Default is [UIColor redColor]. Set this property to nil to reset to the default.
  */
-@property (nonatomic, copy, null_resettable) IBInspectable UIColor *textErrorColor;
+@property (nonatomic, copy, null_resettable) /*IBInspectable*/ UIColor *textErrorColor;
 
 /**
  *  @brief Whether or not the field currently contains a valid card number, expiration date and security code.
  */
-@property (nonatomic, getter=isValid) IBInspectable BOOL valid;
+@property (nonatomic, getter=isValid) /*IBInspectable*/ BOOL valid;
 
 @end

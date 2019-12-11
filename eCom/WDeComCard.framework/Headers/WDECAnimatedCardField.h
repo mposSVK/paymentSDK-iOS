@@ -118,43 +118,55 @@ typedef NS_ENUM(NSUInteger, WDECAnimatedCardFieldState) {
  *  @brief The text placeholder color used in each child field.
  *  @details Default is [UIColor lightGrayColor]. Set this property to nil to reset to the default.
  */
-@property(nonatomic, copy, null_resettable) IBInspectable UIColor *placeholderColor;
+@property(nonatomic, copy, null_resettable) /*IBInspectable*/ UIColor *placeholderColor;
 
 /**
  *  @brief The text color to be used when entering valid text.
  *  @details Default is [UIColor blackColor]. Set this property to nil to reset to the default.
  */
-@property(nonatomic, copy, null_resettable) IBInspectable UIColor *textColor;
+@property(nonatomic, copy, null_resettable) /*IBInspectable*/ UIColor *textColor;
 
 /**
  *  @brief The text color to be used when the user has entered invalid information, such as an invalid card number.
  *  @details Default is [UIColor redColor]. Set this property to nil to reset to the default.
  */
-@property(nonatomic, copy, null_resettable) IBInspectable UIColor *textErrorColor;
+@property(nonatomic, copy, null_resettable) /*IBInspectable*/ UIColor *textErrorColor;
 
 /**
  *  @brief The placeholder for the card number field.
  *  @details Default is localized @"Credit Card Number".
  */
-@property(nonatomic, copy, null_resettable) IBInspectable NSString *numberPlaceholder;
+@property(nonatomic, copy, null_resettable) /*IBInspectable*/ NSString *numberPlaceholder;
 
 /**
  *  @brief The placeholder for the expiration date field.
  *  @details Defaults to localized @"MM/YY".
  */
-@property(nonatomic, copy, null_resettable) IBInspectable NSString *expirationDatePlaceholder;
+@property(nonatomic, copy, null_resettable) /*IBInspectable*/ NSString *expirationDatePlaceholder;
 
 /**
  *  @brief The placeholder for the security code field.
  *  @details Defaults to @"CVC".
  */
-@property(nonatomic, copy, null_resettable) IBInspectable NSString *securityCodePlaceholder;
+@property(nonatomic, copy, null_resettable) /*IBInspectable*/ NSString *securityCodePlaceholder;
 
 /**
  *  @brief The placeholder for the cardholder field.
  *  @details Defaults to @"Cardholder".
  */
-@property(nonatomic, copy, null_resettable) IBInspectable NSString *cardholderPlaceholder;
+@property(nonatomic, copy, null_resettable) /*IBInspectable*/ NSString *cardholderPlaceholder;
+
+/**
+*  @brief Minimal expiration year.
+*  @details Defaults to 2000.
+*/
+@property (nonatomic, copy, null_resettable) NSString *min_last_year;
+
+/**
+*  @brief Maximal expiration year.
+*  @details Defaults to 2099.
+*/
+@property (nonatomic, copy, null_resettable) NSString *max_last_year;
 
 /**
  *  @brief The underline color used for textfield
