@@ -28,7 +28,7 @@ class PaymemtVC: UIViewController {
             let requestIDStr : String = payment.requestID
             let transactionTypeStr : String = WDECTransactionTypeGetCode(payment.transactionType)
             let amountStr : String = (payment.amount?.stringValue)!
-            let currencyStr : String = payment.currency
+            let currencyStr : String = payment.currency ?? ""
             let IPAddressStr : String = (payment.ipAddress) ?? ""
             let date = Date()
         

@@ -189,14 +189,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Simple/Pods-Simple-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleMobileVision/GoogleMVTextDetectorResources.bundle",
-				"${PODS_ROOT}/../../eCom/WDeComCard.framework/WDeComCard.bundle",
-				"${PODS_ROOT}/../../eCom/WDeComCardScanner.framework/WDeComCardScanner.bundle",
-				"${PODS_ROOT}/../../eCom/WDeComCardScannerGallery.framework/WDeComCardScannerGallery.bundle",
-				"${PODS_ROOT}/../../eCom/WDeCom.framework/WDeCom.bundle",
-				"${PODS_ROOT}/../../eCom/WDeComIBANScanner.framework/WDeComIBANScanner.bundle",
-				"${PODS_ROOT}/../../eCom/WDeComIBANScannerGallery.framework/WDeComIBANScannerGallery.bundle",
-				"${PODS_ROOT}/../../eCom/WDeComSEPA.framework/WDeComSEPA.bundle",
-				"${PODS_ROOT}/../../eCom/WDeComScanner.framework/WDeComScanner.bundle",
+				"${PODS_ROOT}/../../WDeCom/output/eCom/WDeComCard.framework/WDeComCard.bundle",
+				"${PODS_ROOT}/../../WDeCom/output/eCom/WDeComCardScanner.framework/WDeComCardScanner.bundle",
+				"${PODS_ROOT}/../../WDeCom/output/eCom/WDeComCardScannerGallery.framework/WDeComCardScannerGallery.bundle",
+				"${PODS_ROOT}/../../WDeCom/output/eCom/WDeCom.framework/WDeCom.bundle",
+				"${PODS_ROOT}/../../WDeCom/output/eCom/WDeComIBANScanner.framework/WDeComIBANScanner.bundle",
+				"${PODS_ROOT}/../../WDeCom/output/eCom/WDeComIBANScannerGallery.framework/WDeComIBANScannerGallery.bundle",
+				"${PODS_ROOT}/../../WDeCom/output/eCom/WDeComSEPA.framework/WDeComSEPA.bundle",
+				"${PODS_ROOT}/../../WDeCom/output/eCom/WDeComScanner.framework/WDeComScanner.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -223,7 +223,6 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Simple/Pods-Simple-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/CMPopTipView/CMPopTipView.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -231,7 +230,7 @@
 				"${BUILT_PRODUCTS_DIR}/Lockbox/Lockbox.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Mantle/Mantle.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
 				"${BUILT_PRODUCTS_DIR}/ZappMerchantLib/ZappMerchantLib.framework",
 				"${BUILT_PRODUCTS_DIR}/libextobjc/libextobjc.framework",
@@ -239,7 +238,6 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CMPopTipView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
@@ -247,7 +245,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lockbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mantle.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZappMerchantLib.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libextobjc.framework",

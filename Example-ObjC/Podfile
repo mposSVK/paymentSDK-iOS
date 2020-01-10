@@ -6,10 +6,10 @@ workspace 'Example'
 
 target 'Embedded' do
     project 'Embedded.xcodeproj'    
-    pod 'paymentSDK/All', :path => '..'
+    pod 'paymentSDK/All', :path => '../WDeCom/output'
 end
 
 target 'Simple' do
     project 'Simple.xcodeproj'
-    pod 'paymentSDK/All', :path => '..'
+    pod 'paymentSDK/All', :path => '../WDeCom/output'
 end

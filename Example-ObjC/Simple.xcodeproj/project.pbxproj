@@ -224,14 +224,14 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Simple/Pods-Simple-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleMobileVision/GoogleMVTextDetectorResources.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/ZappMerchantLib/ZappMerchantLibResources.bundle",
-				"${PODS_ROOT}/../../eCom/WDeComCard.framework/WDeComCard.bundle",
-				"${PODS_ROOT}/../../eCom/WDeComCardScanner.framework/WDeComCardScanner.bundle",
-				"${PODS_ROOT}/../../eCom/WDeComCardScannerGallery.framework/WDeComCardScannerGallery.bundle",
-				"${PODS_ROOT}/../../eCom/WDeCom.framework/WDeCom.bundle",
-				"${PODS_ROOT}/../../eCom/WDeComIBANScanner.framework/WDeComIBANScanner.bundle",
-				"${PODS_ROOT}/../../eCom/WDeComIBANScannerGallery.framework/WDeComIBANScannerGallery.bundle",
-				"${PODS_ROOT}/../../eCom/WDeComSEPA.framework/WDeComSEPA.bundle",
-				"${PODS_ROOT}/../../eCom/WDeComScanner.framework/WDeComScanner.bundle",
+				"${PODS_ROOT}/../../WDeCom/output/eCom/WDeComCard.framework/WDeComCard.bundle",
+				"${PODS_ROOT}/../../WDeCom/output/eCom/WDeComCardScanner.framework/WDeComCardScanner.bundle",
+				"${PODS_ROOT}/../../WDeCom/output/eCom/WDeComCardScannerGallery.framework/WDeComCardScannerGallery.bundle",
+				"${PODS_ROOT}/../../WDeCom/output/eCom/WDeCom.framework/WDeCom.bundle",
+				"${PODS_ROOT}/../../WDeCom/output/eCom/WDeComIBANScanner.framework/WDeComIBANScanner.bundle",
+				"${PODS_ROOT}/../../WDeCom/output/eCom/WDeComIBANScannerGallery.framework/WDeComIBANScannerGallery.bundle",
+				"${PODS_ROOT}/../../WDeCom/output/eCom/WDeComSEPA.framework/WDeComSEPA.bundle",
+				"${PODS_ROOT}/../../WDeCom/output/eCom/WDeComScanner.framework/WDeComScanner.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
