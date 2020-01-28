@@ -42,6 +42,10 @@
  * Indicates the minimum number of   days between authorizations. The field is limited to maximum 4 characters. This field is required if 3DS Requestor Authentication Indicator = 02 or 03.
  */
 @property (strong, nonatomic, nullable) NSString *recurringFrequency;
+/**
+ *  Indicates the maximum number of authorizations permitted for installment payments.. The field is limited to maximum 3 characters.
+ */
+@property (strong, nonatomic, nullable) NSNumber *numberOfInstallments;
 
 @end
 

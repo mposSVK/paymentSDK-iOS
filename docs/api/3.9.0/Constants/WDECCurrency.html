@@ -1,0 +1,3356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>WDECCurrency Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/prism.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/format.js"></script>
+	<script src="../js/prism.js" data-manual></script>
+	<script>
+		jQuery.noConflict();
+		jQuery( document ).ready(function( $ ) {
+ 			$("pre code").each(function(i, block) {
+				$(this).addClass("language-objectivec")
+				$(this).formatObjectiveC();
+			});
+
+			Prism.highlightAll()
+		});
+	</script>
+
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">WDeCom </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Wirecard AG</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">WDECCurrency Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>WDECCurrency.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">WDECCurrency</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>List of currencies supported by ElasticEngine</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <pre><code>typedef NS_ENUM(NSUInteger, WDECCurrency ) { 
+	<a href="">WDECCurrencyUndefined</a> = 0,
+	<a href="">WDECCurrencyADP</a>,
+	<a href="">WDECCurrencyAED</a>,
+	<a href="">WDECCurrencyAFN</a>,
+	<a href="">WDECCurrencyALL</a>,
+	<a href="">WDECCurrencyAMD</a>,
+	<a href="">WDECCurrencyANG</a>,
+	<a href="">WDECCurrencyAOA</a>,
+	<a href="">WDECCurrencyARS</a>,
+	<a href="">WDECCurrencyAUD</a>,
+	<a href="">WDECCurrencyAWG</a>,
+	<a href="">WDECCurrencyAZN</a>,
+	<a href="">WDECCurrencyBAM</a>,
+	<a href="">WDECCurrencyBBD</a>,
+	<a href="">WDECCurrencyBDT</a>,
+	<a href="">WDECCurrencyBGN</a>,
+	<a href="">WDECCurrencyBHD</a>,
+	<a href="">WDECCurrencyBIF</a>,
+	<a href="">WDECCurrencyBMD</a>,
+	<a href="">WDECCurrencyBND</a>,
+	<a href="">WDECCurrencyBOB</a>,
+	<a href="">WDECCurrencyBRL</a>,
+	<a href="">WDECCurrencyBSD</a>,
+	<a href="">WDECCurrencyBTN</a>,
+	<a href="">WDECCurrencyBWP</a>,
+	<a href="">WDECCurrencyBYR</a>,
+	<a href="">WDECCurrencyBZD</a>,
+	<a href="">WDECCurrencyCAD</a>,
+	<a href="">WDECCurrencyCDF</a>,
+	<a href="">WDECCurrencyCHF</a>,
+	<a href="">WDECCurrencyCLF</a>,
+	<a href="">WDECCurrencyCLP</a>,
+	<a href="">WDECCurrencyCNY</a>,
+	<a href="">WDECCurrencyCOP</a>,
+	<a href="">WDECCurrencyCRC</a>,
+	<a href="">WDECCurrencyCUP</a>,
+	<a href="">WDECCurrencyCVE</a>,
+	<a href="">WDECCurrencyCYP</a>,
+	<a href="">WDECCurrencyCZK</a>,
+	<a href="">WDECCurrencyDEF</a>,
+	<a href="">WDECCurrencyDJF</a>,
+	<a href="">WDECCurrencyDKK</a>,
+	<a href="">WDECCurrencyDOP</a>,
+	<a href="">WDECCurrencyDZD</a>,
+	<a href="">WDECCurrencyEEK</a>,
+	<a href="">WDECCurrencyEGP</a>,
+	<a href="">WDECCurrencyERN</a>,
+	<a href="">WDECCurrencyETB</a>,
+	<a href="">WDECCurrencyEUR</a>,
+	<a href="">WDECCurrencyFJD</a>,
+	<a href="">WDECCurrencyFKP</a>,
+	<a href="">WDECCurrencyGBP</a>,
+	<a href="">WDECCurrencyGEL</a>,
+	<a href="">WDECCurrencyGGP</a>,
+	<a href="">WDECCurrencyGHS</a>,
+	<a href="">WDECCurrencyGIP</a>,
+	<a href="">WDECCurrencyGMD</a>,
+	<a href="">WDECCurrencyGNF</a>,
+	<a href="">WDECCurrencyGTQ</a>,
+	<a href="">WDECCurrencyGYD</a>,
+	<a href="">WDECCurrencyHKD</a>,
+	<a href="">WDECCurrencyHNL</a>,
+	<a href="">WDECCurrencyHRK</a>,
+	<a href="">WDECCurrencyHTG</a>,
+	<a href="">WDECCurrencyHUF</a>,
+	<a href="">WDECCurrencyIDR</a>,
+	<a href="">WDECCurrencyILS</a>,
+	<a href="">WDECCurrencyIMP</a>,
+	<a href="">WDECCurrencyINR</a>,
+	<a href="">WDECCurrencyIQD</a>,
+	<a href="">WDECCurrencyIRR</a>,
+	<a href="">WDECCurrencyISK</a>,
+	<a href="">WDECCurrencyJEP</a>,
+	<a href="">WDECCurrencyJMD</a>,
+	<a href="">WDECCurrencyJOD</a>,
+	<a href="">WDECCurrencyJPY</a>,
+	<a href="">WDECCurrencyKES</a>,
+	<a href="">WDECCurrencyKGS</a>,
+	<a href="">WDECCurrencyKHR</a>,
+	<a href="">WDECCurrencyKMF</a>,
+	<a href="">WDECCurrencyKPW</a>,
+	<a href="">WDECCurrencyKRW</a>,
+	<a href="">WDECCurrencyKWD</a>,
+	<a href="">WDECCurrencyKYD</a>,
+	<a href="">WDECCurrencyKZT</a>,
+	<a href="">WDECCurrencyLAK</a>,
+	<a href="">WDECCurrencyLBP</a>,
+	<a href="">WDECCurrencyLKR</a>,
+	<a href="">WDECCurrencyLRD</a>,
+	<a href="">WDECCurrencyLSL</a>,
+	<a href="">WDECCurrencyLTL</a>,
+	<a href="">WDECCurrencyLVL</a>,
+	<a href="">WDECCurrencyLYD</a>,
+	<a href="">WDECCurrencyM_M</a>,
+	<a href="">WDECCurrencyMAD</a>,
+	<a href="">WDECCurrencyMDL</a>,
+	<a href="">WDECCurrencyMGA</a>,
+	<a href="">WDECCurrencyMKD</a>,
+	<a href="">WDECCurrencyMMK</a>,
+	<a href="">WDECCurrencyMNT</a>,
+	<a href="">WDECCurrencyMOP</a>,
+	<a href="">WDECCurrencyMRO</a>,
+	<a href="">WDECCurrencyMTL</a>,
+	<a href="">WDECCurrencyMUR</a>,
+	<a href="">WDECCurrencyMVR</a>,
+	<a href="">WDECCurrencyMWK</a>,
+	<a href="">WDECCurrencyMXN</a>,
+	<a href="">WDECCurrencyMYR</a>,
+	<a href="">WDECCurrencyMZN</a>,
+	<a href="">WDECCurrencyNAD</a>,
+	<a href="">WDECCurrencyNGN</a>,
+	<a href="">WDECCurrencyNIO</a>,
+	<a href="">WDECCurrencyNOK</a>,
+	<a href="">WDECCurrencyNPR</a>,
+	<a href="">WDECCurrencyNZD</a>,
+	<a href="">WDECCurrencyOMR</a>,
+	<a href="">WDECCurrencyPAB</a>,
+	<a href="">WDECCurrencyPEN</a>,
+	<a href="">WDECCurrencyPGK</a>,
+	<a href="">WDECCurrencyPHP</a>,
+	<a href="">WDECCurrencyPKR</a>,
+	<a href="">WDECCurrencyPLN</a>,
+	<a href="">WDECCurrencyPYG</a>,
+	<a href="">WDECCurrencyQAR</a>,
+	<a href="">WDECCurrencyRON</a>,
+	<a href="">WDECCurrencyRSD</a>,
+	<a href="">WDECCurrencyRUB</a>,
+	<a href="">WDECCurrencyRWF</a>,
+	<a href="">WDECCurrencySAR</a>,
+	<a href="">WDECCurrencySBD</a>,
+	<a href="">WDECCurrencySCR</a>,
+	<a href="">WDECCurrencySDG</a>,
+	<a href="">WDECCurrencySEK</a>,
+	<a href="">WDECCurrencySGD</a>,
+	<a href="">WDECCurrencySHP</a>,
+	<a href="">WDECCurrencySLL</a>,
+	<a href="">WDECCurrencySOS</a>,
+	<a href="">WDECCurrencySPL</a>,
+	<a href="">WDECCurrencySRD</a>,
+	<a href="">WDECCurrencySTD</a>,
+	<a href="">WDECCurrencySVC</a>,
+	<a href="">WDECCurrencySYP</a>,
+	<a href="">WDECCurrencySZL</a>,
+	<a href="">WDECCurrencyTHB</a>,
+	<a href="">WDECCurrencyTJS</a>,
+	<a href="">WDECCurrencyTMM</a>,
+	<a href="">WDECCurrencyTND</a>,
+	<a href="">WDECCurrencyTOP</a>,
+	<a href="">WDECCurrencyTRY</a>,
+	<a href="">WDECCurrencyTTD</a>,
+	<a href="">WDECCurrencyTVD</a>,
+	<a href="">WDECCurrencyTWD</a>,
+	<a href="">WDECCurrencyTZS</a>,
+	<a href="">WDECCurrencyUAH</a>,
+	<a href="">WDECCurrencyUGX</a>,
+	<a href="">WDECCurrencyUNK</a>,
+	<a href="">WDECCurrencyUSD</a>,
+	<a href="">WDECCurrencyUYU</a>,
+	<a href="">WDECCurrencyUZS</a>,
+	<a href="">WDECCurrencyVEB</a>,
+	<a href="">WDECCurrencyVEF</a>,
+	<a href="">WDECCurrencyVND</a>,
+	<a href="">WDECCurrencyVUV</a>,
+	<a href="">WDECCurrencyWST</a>,
+	<a href="">WDECCurrencyXAF</a>,
+	<a href="">WDECCurrencyXAG</a>,
+	<a href="">WDECCurrencyXAU</a>,
+	<a href="">WDECCurrencyXCD</a>,
+	<a href="">WDECCurrencyXDR</a>,
+	<a href="">WDECCurrencyXOF</a>,
+	<a href="">WDECCurrencyXPD</a>,
+	<a href="">WDECCurrencyXPF</a>,
+	<a href="">WDECCurrencyXPT</a>,
+	<a href="">WDECCurrencyYER</a>,
+	<a href="">WDECCurrencyZAR</a>,
+	<a href="">WDECCurrencyZMK</a>,
+	<a href="">WDECCurrencyZWD</a>,
+	<a href="">WDECCurrencyTotalNumber</a>,
+};</code></pre>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="WDECCurrencyUndefined"></a><code>WDECCurrencyUndefined</code></dt>
+<dd>
+
+
+<p>Uninitialized or invalid value</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyADP"></a><code>WDECCurrencyADP</code></dt>
+<dd>
+
+
+<p>Andorran Peseta</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyAED"></a><code>WDECCurrencyAED</code></dt>
+<dd>
+
+
+<p>Dirhams</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyAFN"></a><code>WDECCurrencyAFN</code></dt>
+<dd>
+
+
+<p>Afghanis</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyALL"></a><code>WDECCurrencyALL</code></dt>
+<dd>
+
+
+<p>Leke</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyAMD"></a><code>WDECCurrencyAMD</code></dt>
+<dd>
+
+
+<p>Drams</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyANG"></a><code>WDECCurrencyANG</code></dt>
+<dd>
+
+
+<p>Guilders (also called Florins)</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyAOA"></a><code>WDECCurrencyAOA</code></dt>
+<dd>
+
+
+<p>Kwanza</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyARS"></a><code>WDECCurrencyARS</code></dt>
+<dd>
+
+
+<p>Pesos</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyAUD"></a><code>WDECCurrencyAUD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyAWG"></a><code>WDECCurrencyAWG</code></dt>
+<dd>
+
+
+<p>Guilders (also called Florins)</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyAZN"></a><code>WDECCurrencyAZN</code></dt>
+<dd>
+
+
+<p>New Manats</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyBAM"></a><code>WDECCurrencyBAM</code></dt>
+<dd>
+
+
+<p>Convertible Marka</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyBBD"></a><code>WDECCurrencyBBD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyBDT"></a><code>WDECCurrencyBDT</code></dt>
+<dd>
+
+
+<p>Taka</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyBGN"></a><code>WDECCurrencyBGN</code></dt>
+<dd>
+
+
+<p>Leva</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyBHD"></a><code>WDECCurrencyBHD</code></dt>
+<dd>
+
+
+<p>Dinars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyBIF"></a><code>WDECCurrencyBIF</code></dt>
+<dd>
+
+
+<p>Francs</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyBMD"></a><code>WDECCurrencyBMD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyBND"></a><code>WDECCurrencyBND</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyBOB"></a><code>WDECCurrencyBOB</code></dt>
+<dd>
+
+
+<p>Bolivianos</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyBRL"></a><code>WDECCurrencyBRL</code></dt>
+<dd>
+
+
+<p>Brazil Real</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyBSD"></a><code>WDECCurrencyBSD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyBTN"></a><code>WDECCurrencyBTN</code></dt>
+<dd>
+
+
+<p>Ngultrum</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyBWP"></a><code>WDECCurrencyBWP</code></dt>
+<dd>
+
+
+<p>Pulas</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyBYR"></a><code>WDECCurrencyBYR</code></dt>
+<dd>
+
+
+<p>Rubles</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyBZD"></a><code>WDECCurrencyBZD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyCAD"></a><code>WDECCurrencyCAD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyCDF"></a><code>WDECCurrencyCDF</code></dt>
+<dd>
+
+
+<p>Congolese Francs</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyCHF"></a><code>WDECCurrencyCHF</code></dt>
+<dd>
+
+
+<p>Francs</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyCLF"></a><code>WDECCurrencyCLF</code></dt>
+<dd>
+
+
+<p>Unidades de formento</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyCLP"></a><code>WDECCurrencyCLP</code></dt>
+<dd>
+
+
+<p>Pesos</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyCNY"></a><code>WDECCurrencyCNY</code></dt>
+<dd>
+
+
+<p>Yuan Renminbi</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyCOP"></a><code>WDECCurrencyCOP</code></dt>
+<dd>
+
+
+<p>Pesos</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyCRC"></a><code>WDECCurrencyCRC</code></dt>
+<dd>
+
+
+<p>Colones</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyCUP"></a><code>WDECCurrencyCUP</code></dt>
+<dd>
+
+
+<p>Pesos</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyCVE"></a><code>WDECCurrencyCVE</code></dt>
+<dd>
+
+
+<p>Escudos</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyCYP"></a><code>WDECCurrencyCYP</code></dt>
+<dd>
+
+
+<p>Pounds (expires 2008-Jan-31)</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyCZK"></a><code>WDECCurrencyCZK</code></dt>
+<dd>
+
+
+<p>Koruny</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyDEF"></a><code>WDECCurrencyDEF</code></dt>
+<dd>
+
+
+<p>Default</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyDJF"></a><code>WDECCurrencyDJF</code></dt>
+<dd>
+
+
+<p>Francs</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyDKK"></a><code>WDECCurrencyDKK</code></dt>
+<dd>
+
+
+<p>Kroner</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyDOP"></a><code>WDECCurrencyDOP</code></dt>
+<dd>
+
+
+<p>Pesos</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyDZD"></a><code>WDECCurrencyDZD</code></dt>
+<dd>
+
+
+<p>Algeria Dinars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyEEK"></a><code>WDECCurrencyEEK</code></dt>
+<dd>
+
+
+<p>Krooni</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyEGP"></a><code>WDECCurrencyEGP</code></dt>
+<dd>
+
+
+<p>Pounds</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyERN"></a><code>WDECCurrencyERN</code></dt>
+<dd>
+
+
+<p>Nakfa</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyETB"></a><code>WDECCurrencyETB</code></dt>
+<dd>
+
+
+<p>Birr</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyEUR"></a><code>WDECCurrencyEUR</code></dt>
+<dd>
+
+
+<p>Euro</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyFJD"></a><code>WDECCurrencyFJD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyFKP"></a><code>WDECCurrencyFKP</code></dt>
+<dd>
+
+
+<p>Pounds</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyGBP"></a><code>WDECCurrencyGBP</code></dt>
+<dd>
+
+
+<p>Pounds</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyGEL"></a><code>WDECCurrencyGEL</code></dt>
+<dd>
+
+
+<p>Lari</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyGGP"></a><code>WDECCurrencyGGP</code></dt>
+<dd>
+
+
+<p>Pounds</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyGHS"></a><code>WDECCurrencyGHS</code></dt>
+<dd>
+
+
+<p>Cedis</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyGIP"></a><code>WDECCurrencyGIP</code></dt>
+<dd>
+
+
+<p>Pounds</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyGMD"></a><code>WDECCurrencyGMD</code></dt>
+<dd>
+
+
+<p>Dalasi</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyGNF"></a><code>WDECCurrencyGNF</code></dt>
+<dd>
+
+
+<p>Francs</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyGTQ"></a><code>WDECCurrencyGTQ</code></dt>
+<dd>
+
+
+<p>Quetzales</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyGYD"></a><code>WDECCurrencyGYD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyHKD"></a><code>WDECCurrencyHKD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyHNL"></a><code>WDECCurrencyHNL</code></dt>
+<dd>
+
+
+<p>Lempiras</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyHRK"></a><code>WDECCurrencyHRK</code></dt>
+<dd>
+
+
+<p>Kuna</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyHTG"></a><code>WDECCurrencyHTG</code></dt>
+<dd>
+
+
+<p>Gourdes</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyHUF"></a><code>WDECCurrencyHUF</code></dt>
+<dd>
+
+
+<p>Forint</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyIDR"></a><code>WDECCurrencyIDR</code></dt>
+<dd>
+
+
+<p>Rupiahs</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyILS"></a><code>WDECCurrencyILS</code></dt>
+<dd>
+
+
+<p>New Shekels</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyIMP"></a><code>WDECCurrencyIMP</code></dt>
+<dd>
+
+
+<p>Pounds</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyINR"></a><code>WDECCurrencyINR</code></dt>
+<dd>
+
+
+<p>Rupees</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyIQD"></a><code>WDECCurrencyIQD</code></dt>
+<dd>
+
+
+<p>Dinars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyIRR"></a><code>WDECCurrencyIRR</code></dt>
+<dd>
+
+
+<p>Rials</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyISK"></a><code>WDECCurrencyISK</code></dt>
+<dd>
+
+
+<p>Kronur</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyJEP"></a><code>WDECCurrencyJEP</code></dt>
+<dd>
+
+
+<p>Pounds</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyJMD"></a><code>WDECCurrencyJMD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyJOD"></a><code>WDECCurrencyJOD</code></dt>
+<dd>
+
+
+<p>Dinars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyJPY"></a><code>WDECCurrencyJPY</code></dt>
+<dd>
+
+
+<p>Yen</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyKES"></a><code>WDECCurrencyKES</code></dt>
+<dd>
+
+
+<p>Shillings</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyKGS"></a><code>WDECCurrencyKGS</code></dt>
+<dd>
+
+
+<p>Soms</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyKHR"></a><code>WDECCurrencyKHR</code></dt>
+<dd>
+
+
+<p>Riels</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyKMF"></a><code>WDECCurrencyKMF</code></dt>
+<dd>
+
+
+<p>Francs</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyKPW"></a><code>WDECCurrencyKPW</code></dt>
+<dd>
+
+
+<p>Won</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyKRW"></a><code>WDECCurrencyKRW</code></dt>
+<dd>
+
+
+<p>Won</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyKWD"></a><code>WDECCurrencyKWD</code></dt>
+<dd>
+
+
+<p>Dinars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyKYD"></a><code>WDECCurrencyKYD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyKZT"></a><code>WDECCurrencyKZT</code></dt>
+<dd>
+
+
+<p>Tenge</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyLAK"></a><code>WDECCurrencyLAK</code></dt>
+<dd>
+
+
+<p>Kips</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyLBP"></a><code>WDECCurrencyLBP</code></dt>
+<dd>
+
+
+<p>Pounds</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyLKR"></a><code>WDECCurrencyLKR</code></dt>
+<dd>
+
+
+<p>Rupees</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyLRD"></a><code>WDECCurrencyLRD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyLSL"></a><code>WDECCurrencyLSL</code></dt>
+<dd>
+
+
+<p>Maloti</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyLTL"></a><code>WDECCurrencyLTL</code></dt>
+<dd>
+
+
+<p>Litai</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyLVL"></a><code>WDECCurrencyLVL</code></dt>
+<dd>
+
+
+<p>Lati</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyLYD"></a><code>WDECCurrencyLYD</code></dt>
+<dd>
+
+
+<p>Dinars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyM_M"></a><code>WDECCurrencyM_M</code></dt>
+<dd>
+
+
+<p>Airline Miles</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyMAD"></a><code>WDECCurrencyMAD</code></dt>
+<dd>
+
+
+<p>Dirhams</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyMDL"></a><code>WDECCurrencyMDL</code></dt>
+<dd>
+
+
+<p>Lei</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyMGA"></a><code>WDECCurrencyMGA</code></dt>
+<dd>
+
+
+<p>Ariary</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyMKD"></a><code>WDECCurrencyMKD</code></dt>
+<dd>
+
+
+<p>Denars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyMMK"></a><code>WDECCurrencyMMK</code></dt>
+<dd>
+
+
+<p>Kyats</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyMNT"></a><code>WDECCurrencyMNT</code></dt>
+<dd>
+
+
+<p>Tugriks</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyMOP"></a><code>WDECCurrencyMOP</code></dt>
+<dd>
+
+
+<p>Patacas</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyMRO"></a><code>WDECCurrencyMRO</code></dt>
+<dd>
+
+
+<p>Ouguiyas</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyMTL"></a><code>WDECCurrencyMTL</code></dt>
+<dd>
+
+
+<p>Liri (expires 2008-Jan-31)</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyMUR"></a><code>WDECCurrencyMUR</code></dt>
+<dd>
+
+
+<p>Rupees</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyMVR"></a><code>WDECCurrencyMVR</code></dt>
+<dd>
+
+
+<p>Rufiyaa</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyMWK"></a><code>WDECCurrencyMWK</code></dt>
+<dd>
+
+
+<p>Kwachas</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyMXN"></a><code>WDECCurrencyMXN</code></dt>
+<dd>
+
+
+<p>Pesos</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyMYR"></a><code>WDECCurrencyMYR</code></dt>
+<dd>
+
+
+<p>Ringgits</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyMZN"></a><code>WDECCurrencyMZN</code></dt>
+<dd>
+
+
+<p>Meticais</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyNAD"></a><code>WDECCurrencyNAD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyNGN"></a><code>WDECCurrencyNGN</code></dt>
+<dd>
+
+
+<p>Nairas</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyNIO"></a><code>WDECCurrencyNIO</code></dt>
+<dd>
+
+
+<p>Cordobas</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyNOK"></a><code>WDECCurrencyNOK</code></dt>
+<dd>
+
+
+<p>Krone</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyNPR"></a><code>WDECCurrencyNPR</code></dt>
+<dd>
+
+
+<p>Nepal Rupees</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyNZD"></a><code>WDECCurrencyNZD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyOMR"></a><code>WDECCurrencyOMR</code></dt>
+<dd>
+
+
+<p>Rials</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyPAB"></a><code>WDECCurrencyPAB</code></dt>
+<dd>
+
+
+<p>Balboa</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyPEN"></a><code>WDECCurrencyPEN</code></dt>
+<dd>
+
+
+<p>Nuevos Soles</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyPGK"></a><code>WDECCurrencyPGK</code></dt>
+<dd>
+
+
+<p>Kina</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyPHP"></a><code>WDECCurrencyPHP</code></dt>
+<dd>
+
+
+<p>Pesos</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyPKR"></a><code>WDECCurrencyPKR</code></dt>
+<dd>
+
+
+<p>Rupees</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyPLN"></a><code>WDECCurrencyPLN</code></dt>
+<dd>
+
+
+<p>Zlotych</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyPYG"></a><code>WDECCurrencyPYG</code></dt>
+<dd>
+
+
+<p>Guarani</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyQAR"></a><code>WDECCurrencyQAR</code></dt>
+<dd>
+
+
+<p>Rials</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyRON"></a><code>WDECCurrencyRON</code></dt>
+<dd>
+
+
+<p>New Lei</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyRSD"></a><code>WDECCurrencyRSD</code></dt>
+<dd>
+
+
+<p>Dinars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyRUB"></a><code>WDECCurrencyRUB</code></dt>
+<dd>
+
+
+<p>Rubles</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyRWF"></a><code>WDECCurrencyRWF</code></dt>
+<dd>
+
+
+<p>Rwanda Francs</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencySAR"></a><code>WDECCurrencySAR</code></dt>
+<dd>
+
+
+<p>Riyals</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencySBD"></a><code>WDECCurrencySBD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencySCR"></a><code>WDECCurrencySCR</code></dt>
+<dd>
+
+
+<p>Rupees</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencySDG"></a><code>WDECCurrencySDG</code></dt>
+<dd>
+
+
+<p>Pounds</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencySEK"></a><code>WDECCurrencySEK</code></dt>
+<dd>
+
+
+<p>Kronor</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencySGD"></a><code>WDECCurrencySGD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencySHP"></a><code>WDECCurrencySHP</code></dt>
+<dd>
+
+
+<p>Pounds</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencySLL"></a><code>WDECCurrencySLL</code></dt>
+<dd>
+
+
+<p>Leones</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencySOS"></a><code>WDECCurrencySOS</code></dt>
+<dd>
+
+
+<p>Shillings</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencySPL"></a><code>WDECCurrencySPL</code></dt>
+<dd>
+
+
+<p>Luigini</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencySRD"></a><code>WDECCurrencySRD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencySTD"></a><code>WDECCurrencySTD</code></dt>
+<dd>
+
+
+<p>Dobras</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencySVC"></a><code>WDECCurrencySVC</code></dt>
+<dd>
+
+
+<p>Colones</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencySYP"></a><code>WDECCurrencySYP</code></dt>
+<dd>
+
+
+<p>Pounds</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencySZL"></a><code>WDECCurrencySZL</code></dt>
+<dd>
+
+
+<p>Emalangeni</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyTHB"></a><code>WDECCurrencyTHB</code></dt>
+<dd>
+
+
+<p>Baht</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyTJS"></a><code>WDECCurrencyTJS</code></dt>
+<dd>
+
+
+<p>Somoni</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyTMM"></a><code>WDECCurrencyTMM</code></dt>
+<dd>
+
+
+<p>Manats</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyTND"></a><code>WDECCurrencyTND</code></dt>
+<dd>
+
+
+<p>Dinars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyTOP"></a><code>WDECCurrencyTOP</code></dt>
+<dd>
+
+
+<p>Pa’anga</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyTRY"></a><code>WDECCurrencyTRY</code></dt>
+<dd>
+
+
+<p>New Lira</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyTTD"></a><code>WDECCurrencyTTD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyTVD"></a><code>WDECCurrencyTVD</code></dt>
+<dd>
+
+
+<p>Tuvalu Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyTWD"></a><code>WDECCurrencyTWD</code></dt>
+<dd>
+
+
+<p>New Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyTZS"></a><code>WDECCurrencyTZS</code></dt>
+<dd>
+
+
+<p>Shillings</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyUAH"></a><code>WDECCurrencyUAH</code></dt>
+<dd>
+
+
+<p>Hryvnia</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyUGX"></a><code>WDECCurrencyUGX</code></dt>
+<dd>
+
+
+<p>Shillings</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyUNK"></a><code>WDECCurrencyUNK</code></dt>
+<dd>
+
+
+<p>Unknown</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyUSD"></a><code>WDECCurrencyUSD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyUYU"></a><code>WDECCurrencyUYU</code></dt>
+<dd>
+
+
+<p>Pesos</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyUZS"></a><code>WDECCurrencyUZS</code></dt>
+<dd>
+
+
+<p>Sums</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyVEB"></a><code>WDECCurrencyVEB</code></dt>
+<dd>
+
+
+<p>Bolivares (expires 2008-Jun-30)</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyVEF"></a><code>WDECCurrencyVEF</code></dt>
+<dd>
+
+
+<p>Bolivares Fuertes</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyVND"></a><code>WDECCurrencyVND</code></dt>
+<dd>
+
+
+<p>Dong</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyVUV"></a><code>WDECCurrencyVUV</code></dt>
+<dd>
+
+
+<p>Vatu</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyWST"></a><code>WDECCurrencyWST</code></dt>
+<dd>
+
+
+<p>Tala</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyXAF"></a><code>WDECCurrencyXAF</code></dt>
+<dd>
+
+
+<p>Francs</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyXAG"></a><code>WDECCurrencyXAG</code></dt>
+<dd>
+
+
+<p>Ounces</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyXAU"></a><code>WDECCurrencyXAU</code></dt>
+<dd>
+
+
+<p>Ounces</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyXCD"></a><code>WDECCurrencyXCD</code></dt>
+<dd>
+
+
+<p>Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyXDR"></a><code>WDECCurrencyXDR</code></dt>
+<dd>
+
+
+<p>IMF</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyXOF"></a><code>WDECCurrencyXOF</code></dt>
+<dd>
+
+
+<p>Francs</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyXPD"></a><code>WDECCurrencyXPD</code></dt>
+<dd>
+
+
+<p>Ounces</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyXPF"></a><code>WDECCurrencyXPF</code></dt>
+<dd>
+
+
+<p>Francs</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyXPT"></a><code>WDECCurrencyXPT</code></dt>
+<dd>
+
+
+<p>Ounces</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyYER"></a><code>WDECCurrencyYER</code></dt>
+<dd>
+
+
+<p>Rials</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyZAR"></a><code>WDECCurrencyZAR</code></dt>
+<dd>
+
+
+<p>Rand</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyZMK"></a><code>WDECCurrencyZMK</code></dt>
+<dd>
+
+
+<p>Kwacha</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyZWD"></a><code>WDECCurrencyZWD</code></dt>
+<dd>
+
+
+<p>Zimbabwe Dollars</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCurrencyTotalNumber"></a><code>WDECCurrencyTotalNumber</code></dt>
+<dd>
+
+
+<p>Total number of values. It is used for validation and handled as invalid value</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCurrency.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">WDECCurrency.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 Wirecard AG. All rights reserved. Updated: 2020-01-15</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -20,6 +20,12 @@
 @interface WDECCardPayment : WDECPayment
 
 /**
+ *  @brief Prompt [Card Holder] for version of 3DS.
+ *  @details Default value is nil.
+ */
+@property (assign, nonatomic) NSString *versionThreeD;
+
+/**
  *  @brief Indicates that the Transaction Request should proceed with the 3D Secure workflow if the [Card Holder] is enrolled. Otherwise, the transaction proceeds without 3D Secure
  *  @details Default value is WDECBoolYes. In case of referenced transactions (WDECTransactionTypeCaptureAuthorization, WDECTransactionTypeReferencedAuthorization, WDECTransactionTypeReferencedPurchase), it is ignored.
  */

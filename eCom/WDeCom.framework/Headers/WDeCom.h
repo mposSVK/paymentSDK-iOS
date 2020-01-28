@@ -25,6 +25,7 @@ FOUNDATION_EXPORT const unsigned char WDeComVersionString[];
 #import <WDeCom/WDECPaymentResponse.h>
 #import <WDeCom/WDECPaymentMethodName.h>
 #import <WDeCom/WDECPeriodic.h>
+#import <WDeCom/WDECPeriodicType.h>
 #import <WDeCom/WDECSubMerchantInfo.h>
 #import <WDeCom/WDECTransactionState.h>
 #import <WDeCom/WDECTransactionType.h>
