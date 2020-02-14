@@ -23,7 +23,6 @@ class PaymemtVC: UIViewController {
         if let payment = payment {
             payment.merchantAccountID = merchantAccountID
             payment.requestID = NSUUID.init().uuidString
-            payment.requestTimestamp = Date.init()
             
             let requestIDStr : String = payment.requestID
             let transactionTypeStr : String = WDECTransactionTypeGetCode(payment.transactionType)
@@ -33,11 +32,20 @@ class PaymemtVC: UIViewController {
             let date = Date()
         
             let requestTimestampStrV2 : String = DateFormatter.requestTimestampDateFormatterV2().string(from: date)
+            
+            /**
+            @Warning: We ask you to never share your Secret Key with anyone, or store it inside your application or phone. This is crucial to ensure the security of your transactions.
+            You will be generating the signature on your own server’s backend, as it is the only place where you will store your Secret Key.
+            */
             payment.signature = self.serverSideSignatureCalculationV2(requestTimestamp: requestTimestampStrV2, requestID: requestIDStr, merchantID: merchantAccountID, transactionType: transactionTypeStr, amount: amountStr, currency: currencyStr, IPAddress: IPAddressStr, secretKey: merchantSecretKey as NSString) as String
 
         }
     }
     
+    /**
+     @Warning: We ask you to never share your Secret Key with anyone, or store it inside your application or phone. This is crucial to ensure the security of your transactions.
+     You will be generating the signature on your own server’s backend, as it is the only place where you will store your Secret Key.
+     */
     public func serverSideSignatureCalculation(requestTimestamp:String,
                                                requestID:String,
                                                merchantID:String,

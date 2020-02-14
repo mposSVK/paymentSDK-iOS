@@ -29,7 +29,6 @@
     
     payment.merchantAccountID = merchantAccountID;
     payment.requestID = [[NSUUID UUID] UUIDString];
-    payment.requestTimestamp = [NSDate date]; // UTC
     
     NSString *requestIDStr = payment.requestID;
     NSString *transactionTypeStr = WDECTransactionTypeGetCode(payment.transactionType) ?: @"";
@@ -38,6 +37,10 @@
     NSString *IPAddressStr = payment.IPAddress;
     NSDate *requestTimestamp = [NSDate date]; // UTC
     NSString *requestTimestampStr = [[NSDateFormatter timestampDateFormatter] stringFromDate:requestTimestamp];
+    /**
+    @Warning: We ask you to never share your Secret Key with anyone, or store it inside your application or phone. This is crucial to ensure the security of your transactions.
+    You will be generating the signature on your own server’s backend, as it is the only place where you will store your Secret Key.
+    */
     NSString *signature = [self serverSideSignatureCalculationV2:requestTimestampStr
                                                        requestID:requestIDStr
                                                       merchantID:merchantAccountID
@@ -49,6 +52,10 @@
     payment.signature = signature;
 }
 
+/**
+@Warning: We ask you to never share your Secret Key with anyone, or store it inside your application or phone. This is crucial to ensure the security of your transactions.
+You will be generating the signature on your own server’s backend, as it is the only place where you will store your Secret Key.
+*/
 - (NSString *)serverSideSignatureCalculationV2:(NSString *)requestTimestamp
                                      requestID:(NSString *)requestID
                                     merchantID:(NSString *)merchantID

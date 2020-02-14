@@ -84,6 +84,10 @@ class AnimatedCardfieldVC: PaymemtVC, WDECAnimatedCardFieldDelegate {
         payment.amount = AMOUNT
         payment.currency = "USD"
         payment.transactionType = .purchase
+        /**
+        @Warning: We ask you to never share your Secret Key with anyone, or store it inside your application or phone. This is crucial to ensure the security of your transactions.
+        You will be generating the signature on your own server’s backend, as it is the only place where you will store your Secret Key.
+        */
         let WD_MERCHANT_ACCOUNT_ID = "33f6d473-3036-4ca5-acb5-8c64dac862d1"
         let WD_MERCHANT_SECRET_KEY = "9e0130f6-2e1e-4185-b0d5-dc69079c75cc"
         self.merchantSignedPaymentByMerchantSecretKey(merchantAccountID: WD_MERCHANT_ACCOUNT_ID, payment: payment, merchantSecretKey: WD_MERCHANT_SECRET_KEY)

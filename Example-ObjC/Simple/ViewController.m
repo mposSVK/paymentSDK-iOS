@@ -126,6 +126,10 @@ NSString *const PMTitleSEPA                     = @"SEPA";
     
     static NSString *const WD_MERCHANT_ACCOUNT_ID = @"";
     static NSString *const WD_MERCHANT_SECRET_KEY = @"";
+    /**
+    @Warning: We ask you to never share your Secret Key with anyone, or store it inside your application or phone. This is crucial to ensure the security of your transactions.
+    You will be generating the signature on your own server’s backend, as it is the only place where you will store your Secret Key.
+    */
     [self merchant:WD_MERCHANT_ACCOUNT_ID signPayment:payment byMerchantSecretKey:WD_MERCHANT_SECRET_KEY];
     return payment;
 }
@@ -136,6 +140,10 @@ NSString *const PMTitleSEPA                     = @"SEPA";
     payment.amount = AMOUNT;
     payment.currency = @"USD";
     payment.transactionType = WDECTransactionTypePurchase;
+    /**
+    @Warning: We ask you to never share your Secret Key with anyone, or store it inside your application or phone. This is crucial to ensure the security of your transactions.
+    You will be generating the signature on your own server’s backend, as it is the only place where you will store your Secret Key.
+    */
     static NSString *const WD_MERCHANT_ACCOUNT_ID = @"33f6d473-3036-4ca5-acb5-8c64dac862d1";
     static NSString *const WD_MERCHANT_SECRET_KEY = @"9e0130f6-2e1e-4185-b0d5-dc69079c75cc";
     [self merchant:WD_MERCHANT_ACCOUNT_ID signPayment:payment byMerchantSecretKey:WD_MERCHANT_SECRET_KEY];
@@ -160,7 +168,10 @@ NSString *const PMTitleSEPA                     = @"SEPA";
     payment.currency = @"EUR";
     payment.transactionType = WDECTransactionTypeDebit;
     payment.order = order;
-    
+    /**
+    @Warning: We ask you to never share your Secret Key with anyone, or store it inside your application or phone. This is crucial to ensure the security of your transactions.
+    You will be generating the signature on your own server’s backend, as it is the only place where you will store your Secret Key.
+    */
     static NSString *const WD_MERCHANT_ACCOUNT_ID = @"9abf05c1-c266-46ae-8eac-7f87ca97af28";
     static NSString *const WD_MERCHANT_SECRET_KEY = @"5fca2a83-89ca-4f9e-8cf7-4ca74a02773f";
     [self merchant:WD_MERCHANT_ACCOUNT_ID signPayment:payment byMerchantSecretKey:WD_MERCHANT_SECRET_KEY];
@@ -177,7 +188,10 @@ NSString *const PMTitleSEPA                     = @"SEPA";
     payment.amount = AMOUNT;
     payment.currency = @"EUR";
     payment.transactionType = WDECTransactionTypePendingDebit;
-    
+    /**
+    @Warning: We ask you to never share your Secret Key with anyone, or store it inside your application or phone. This is crucial to ensure the security of your transactions.
+    You will be generating the signature on your own server’s backend, as it is the only place where you will store your Secret Key.
+    */
     static NSString *const WD_MERCHANT_ACCOUNT_ID = @"4c901196-eff7-411e-82a3-5ef6b6860d64";
     static NSString *const WD_MERCHANT_SECRET_KEY = @"ecdf5990-0372-47cd-a55d-037dccfe9d25";
     [self merchant:WD_MERCHANT_ACCOUNT_ID signPayment:payment byMerchantSecretKey:WD_MERCHANT_SECRET_KEY];
