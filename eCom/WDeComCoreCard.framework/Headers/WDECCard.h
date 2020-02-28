@@ -29,7 +29,11 @@
  */
 @property (assign, nonatomic) WDECCardBrand brand;
 
+/**
+@brief Token usage indicator
+*/
 @property (assign, nonatomic, getter=istokenIndicatorUsed) BOOL tokenUsageIndicator;
+
 @end
 
 /** @} */

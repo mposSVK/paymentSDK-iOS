@@ -9,6 +9,7 @@
 #import <WDeCom/WDeCom.h>
 
 #import <WDeComCoreCard/WDECCardToken.h>
+#import <WDeComCoreCard/WDECCard.h>
 
 /** @addtogroup ios_sdk
  *  @{
@@ -64,6 +65,12 @@
  *  @details It is optional.
  */
 @property (strong, nonatomic, nullable) WDECSubMerchantInfo *subMerchantInfo;
+
+/**
+ *  @brief Nonsensitive card data.
+ *  @details It is returned by WDECCardField and WDECAnimatedCardField. You can modify a payment request based on[WDECard brand].
+ */
+@property (strong, nonatomic, nullable) WDECCard *card;
 
 @end
 

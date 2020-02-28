@@ -31,7 +31,9 @@ typedef NS_ENUM(NSUInteger, WDECCardFieldState) {
     WDECCardFieldStateCardValid,
     /** User is trying to type unsupported card type */
     WDECCardFieldStateCardUnsupported,
-    
+    /** User is trying to use supported cards CUP & UPI type at the same time */
+    WDECCardFieldStateSupportedCardsInvalid,
+
     /** Card number UITextField is first responder */
     WDECCardFieldStateNumberEditting,
     /** Card number is incomplete */

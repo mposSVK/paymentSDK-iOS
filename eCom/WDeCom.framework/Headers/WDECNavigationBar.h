@@ -30,6 +30,10 @@ typedef NS_ENUM(NSInteger, WDECStatusBarStyle) {
 @required
 -(void)backButtonTappedIn:(nonnull id)navbar;
 -(void)rightButtonTappedIn:(nonnull id)navbar;
+-(CGSize)contentSize:(nonnull id)navbar;
+
+@optional
+-(void)didChange:(nonnull id)navbar size:(CGSize)size;
 
 @end
 

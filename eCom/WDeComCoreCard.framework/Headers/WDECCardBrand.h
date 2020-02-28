@@ -30,7 +30,8 @@ typedef NS_ENUM(NSUInteger, WDECCardBrand) {
     WDECCardBrandUATP,
     WDECCardBrandUzCard,
     WDECCardBrandVisa,
-    
+    WDECCardBrandUPI,
+
     /** Total number of values. It is used for validation and handled as invalid value */
     WDECCardBrandTotalNumber
 };

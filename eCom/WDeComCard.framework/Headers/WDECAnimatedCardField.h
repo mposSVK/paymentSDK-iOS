@@ -22,7 +22,9 @@ typedef NS_ENUM(NSUInteger, WDECAnimatedCardFieldState) {
     WDECAnimatedCardFieldStateCardValid,
     /** User is trying to type unsupported card type */
     WDECAnimatedCardFieldStateCardUnsupported,
-    
+    /** User is trying to use supported cards CUP & UPI type at the same time */
+    WDECAnimatedCardFieldStateSupportedCardsInvalid,
+
     /** Card number UITextField is first responder */
     WDECAnimatedCardFieldStateNumberEditting,
     /** Card number is incomplete */
@@ -177,10 +179,10 @@ typedef NS_ENUM(NSUInteger, WDECAnimatedCardFieldState) {
 @property (nonatomic, copy, null_resettable) UIColor *animatedCardTextColor;
 /**
  *  @brief Set of supported card brands.
- *  @details If supportedCardBrands is set and does not contain recognized card brand of user card number the state changes to ::WDECCardFieldStateCardUnsupported. Set can contain NSNumbers with ::WDECCardBrand values. Example:
- 
- cardField.supportedCardBrands = [NSSet setWithObjects:@(WDECCardBrandAmex), @(WDECCardBrandMasterCard), @(WDECCardBrandVisa), nil];
- 
+ *  @details If supportedCardBrands is set and does not contain recognized card brand of user card number the state changes to ::WDECCardFieldStateCardUnsupported.
+ *  Set can contain NSNumbers with ::WDECCardBrand values. Example:
+ *
+ *  cardField.supportedCardBrands =@[@(WDECCardBrandAmex), @(WDECCardBrandMasterCard), @(WDECCardBrandVisa)];
  */
 @property(nonatomic, copy, nullable) NSArray<NSNumber *> *supportedCardBrands;
 

@@ -34,19 +34,6 @@
 @interface WDECPayment : NSObject
 
 /**
- *  @brief Authorize client to process the transaction.
- *  @details It is mandatory.
- */
-@property (strong, nonatomic, nonnull) NSString *requestSignature DEPRECATED_MSG_ATTRIBUTE("Use 2nd generation signature instead");
-
-
-/**
- *  @brief Date when requestSignature was generated
- *  @details It is mandatory for requestSignature
- */
-@property (strong, nonatomic, nonnull) NSDate *requestTimestamp DEPRECATED_MSG_ATTRIBUTE("Use 2nd generation signature instead");
-
-/**
  *  @brief 2nd generation signature. Authorize client to process the transaction. checkPayment works only with this signature.
  *  @details It is mandatory. It supersedes requestSignature and requestTimestamp.
  */
