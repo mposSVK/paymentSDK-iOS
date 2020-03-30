@@ -15,7 +15,7 @@
  *
  *  @return return localized error string, which can be presented to user
  */
-typedef NSString *_Nullable(^WDVerificationBlock)(NSString *_Nullable validatedString);
+typedef NSString *_Nullable(^WDVerificationBlock)(NSString *_Nullable validatedString, BOOL showIncompleteError);
 
 @protocol WDECVerifiable <NSObject>
 

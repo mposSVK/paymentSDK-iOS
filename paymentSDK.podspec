@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'paymentSDK'
-    s.version          = '4.0.0'
+    s.version          = '4.1.0'
     s.summary          = 'Wirecard paymentSDK - online payments'
 
     s.description      = <<-DESC
@@ -16,7 +16,7 @@ DESC
     s.homepage         = 'https://github.com/wirecard/paymentSDK-iOS'
     s.documentation_url= 'https://wirecard.github.io/paymentSDK-iOS/integration/latest'
     s.license          = { :type => 'MIT' }
-    s.authors          = { 'Stefan Sedlak' => 'stefan.sedlak@wirecard.com', 'Jozef Vrana' => 'jozef.vrana@wirecard.com' }
+    s.authors          = { 'Stefan Sedlak' => 'stefan.sedlak@wirecard.com', 'Peter Stavny' => 'peter.stavny@wirecard.com' }
     s.source           = { :git => 'https://github.com/wirecard/paymentSDK-iOS.git', :tag => s.version }
     s.platform         = :ios
     s.ios.deployment_target = '9.0'
@@ -44,7 +44,10 @@ DESC
         ss.vendored_frameworks = 'eCom/WDeCom.framework'
         ss.resource            = 'eCom/WDeCom.framework/WDeCom.bundle'
 
-        ss.dependency            'AFNetworking', '~> 3.2.1'
+        ss.dependency            'AFNetworking/Reachability', '~> 3.2.1'
+        ss.dependency            'AFNetworking/Serialization', '~> 3.2.1'
+        ss.dependency            'AFNetworking/Security', '~> 3.2.1'
+        ss.dependency            'AFNetworking/NSURLSession', '~> 3.2.1'
         ss.dependency            'CocoaLumberjack', '~> 3.6.0'
         ss.ios.dependency        'Lockbox', '~> 3.0.6'
         ss.dependency            'Mantle', '~> 2.1.0'

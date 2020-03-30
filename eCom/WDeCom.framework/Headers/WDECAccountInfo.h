@@ -19,59 +19,70 @@
 @interface WDECAccountInfo : NSObject
 
 /**
- * Date that the cardholder opened the account with the 3DS Requestor. Date format = YYYYMMDD.
+ * @brief Date that the cardholder opened the account with the 3DS Requestor. Date format = YYYYMMDD.
  */
 @property(strong, nonatomic, nullable) NSDate *creationDate;
 
 /**
- * Date that the cardholder’s account with the 3DS Requestor was last changed. Including Billing or Shipping   address, new payment account, or new user(s) added. Date format = YYYYMMDD.
+ * @brief Date that the cardholder’s account with the 3DS Requestor was last changed. Including Billing or Shipping   address, new payment account, or new user(s) added. Date format = YYYYMMDD.
  */
 @property(strong, nonatomic, nullable) NSDate *updateDate;
 
 /**
- * Date that cardholder’s account with the 3DS Requestor had a password change or account reset. Date   format must be YYYYMMDD.
+ * @brief Date that cardholder’s account with the 3DS Requestor had a password change or account reset. Date   format must be YYYYMMDD.
  */
 @property(strong, nonatomic, nullable) NSDate *passwordChangeDate;
 
 /**
- * Date when the shipping address used for this transaction was first used with the 3DS Requestor. Date   format must be YYYYMMDD.
+ * @brief Date when the shipping address used for this transaction was first used with the 3DS Requestor. Date   format must be YYYYMMDD.
  */
 @property(strong, nonatomic, nullable) NSDate *shippingAddressFirstUse;
 
 /**
- * Number of transactions (successful and abandoned) for this cardholder account with the 3DS Requestor across   all payment accounts in the previous 24 hours.
+ * @brief Number of transactions (successful and abandoned) for this cardholder account with the 3DS Requestor across   all payment accounts in the previous 24 hours.
  */
 @property(assign, nonatomic) NSInteger transactionsLastDay;
 
 /**
- * Number of transactions (successful and abandoned) for this cardholder account with the 3DS Requestor across   all payment accounts in the previous year.
+ * @brief Number of transactions (successful and abandoned) for this cardholder account with the 3DS Requestor across   all payment accounts in the previous year.
  */
 @property(assign, nonatomic) NSInteger transactionsLastYear;
 
 /**
- * Number of Add Card attempts in the last 24 hours.
+ * @brief Number of Add Card attempts in the last 24 hours.
  */
 @property(assign, nonatomic) NSInteger cardTransactionsLastDay;
 
 /**
- * Number of purchases with this cardholder account during the previous six months.
+ * @brief Number of purchases with this cardholder account during the previous six months.
  */
 @property(assign, nonatomic) NSInteger purchasesLastSixMonths;
 
 /**
- * Indicates whether the 3DS Requestor has experienced suspicious activity(including previous fraud) on   the cardholder account. Accepted values are:
+ * @brief Indicates whether the 3DS Requestor has experienced suspicious activity(including previous fraud) on  the cardholder account.  Accepted values are:
  * true -> No suspicious activity has been observed
  * false -> Suspicious activity has been observed
  */
 @property(assign, nonatomic) BOOL suspiciousActivity;
 
 /**
- * Date that the payment account was enrolled in the cardholder’s account with the 3DS Requestor. Date format must be YYYYMMDD.
+ * @brief Date that the payment account was enrolled in the cardholder’s account with the 3DS Requestor. Date format must be YYYYMMDD.
  */
 @property(strong, nonatomic, nullable) NSDate *cardCreationDate;
 
+/**
+ * @brief Indicates the type of the cardholder login in the merchant’s shop by the WDECAuthenticationMethod enum.
+ */
 @property (assign, nonatomic) WDECAuthenticationMethod authenticationMethod;
+
+/**
+ * @brief Date and time (UTC) of the consumer login in the merchant’s shop. Date Format: YYYY-MM-DDThh:mm:ssZ. For guest checkout, the timestamp is now.
+ */
 @property (strong, nonatomic, nullable) NSDate *authenticationTimestamp;
+
+/**
+ * @brief Indicates whether a challenge is requested for this transaction with the 3DS Requestor. If the element is not provided, the ACS will interpret this as WDECChallengeIndicatorNoPreference.
+ */
 @property (assign, nonatomic) WDECChallengeIndicator challengeIndicator;
 
 @end

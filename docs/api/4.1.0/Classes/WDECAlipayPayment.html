@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>WDECAlipayPayment Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/prism.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/format.js"></script>
+	<script src="../js/prism.js" data-manual></script>
+	<script>
+		jQuery.noConflict();
+		jQuery( document ).ready(function( $ ) {
+ 			$("pre code").each(function(i, block) {
+				$(this).addClass("language-objectivec")
+				$(this).formatObjectiveC();
+			});
+
+			Prism.highlightAll()
+		});
+	</script>
+
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">WDeCom </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Wirecard AG</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/initWithAmount:currency:">- initWithAmount:currency:</option>
+		
+		<option value="//api/name/initWithAmount:currencyString:">- initWithAmount:currencyString:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">WDECAlipayPayment Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/WDECPayment.html">WDECPayment</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>WDECAlipayPayment.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithAmount:currency:" title="initWithAmount:currency:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithAmount:currency:">&ndash;&nbsp;initWithAmount:currency:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initialize payment object</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><pre><code>- (nullable instancetype)initWithAmount:(nonnull NSDecimalNumber *)<em>amount</em> currency:(WDECCurrency)<em>currency</em></code></pre></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>amount</code></th>
+						<td><p>Amount that accompanies the transaction</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>currency</code></th>
+						<td><p>Currency in which the transaction is processed</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>initialized object or nil</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECAlipayPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithAmount:currencyString:" title="initWithAmount:currencyString:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithAmount:currencyString:">&ndash;&nbsp;initWithAmount:currencyString:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initialize payment object</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><pre><code>- (nullable instancetype)initWithAmount:(nonnull NSDecimalNumber *)<em>amount</em> currencyString:(nonnull NSString *)<em>currency</em></code></pre></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>amount</code></th>
+						<td><p>Amount that accompanies the transaction</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>currency</code></th>
+						<td><p>Currency in which the transaction is processed</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>initialized object or nil</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECAlipayPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 Wirecard AG. All rights reserved. Updated: 2020-03-27</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

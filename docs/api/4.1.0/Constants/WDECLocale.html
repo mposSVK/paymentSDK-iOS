@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>WDECLocale Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/prism.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/format.js"></script>
+	<script src="../js/prism.js" data-manual></script>
+	<script>
+		jQuery.noConflict();
+		jQuery( document ).ready(function( $ ) {
+ 			$("pre code").each(function(i, block) {
+				$(this).addClass("language-objectivec")
+				$(this).formatObjectiveC();
+			});
+
+			Prism.highlightAll()
+		});
+	</script>
+
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">WDeCom </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Wirecard AG</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">WDECLocale Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>WDECLocale.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">WDECLocale</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>List of Locales supported by ElasticEngine</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <pre><code>typedef NS_ENUM(NSUInteger, WDECLocale ) { 
+	<a href="">WDECLocaleUndefined</a> = 0,
+	<a href="">WDECLocale_af</a>,
+	<a href="">WDECLocale_ar</a>,
+	<a href="">WDECLocale_az</a>,
+	<a href="">WDECLocale_be</a>,
+	<a href="">WDECLocale_bg</a>,
+	<a href="">WDECLocale_bn</a>,
+	<a href="">WDECLocale_ca</a>,
+	<a href="">WDECLocale_cs</a>,
+	<a href="">WDECLocale_cy</a>,
+	<a href="">WDECLocale_da</a>,
+	<a href="">WDECLocale_de</a>,
+	<a href="">WDECLocale_el</a>,
+	<a href="">WDECLocale_en</a>,
+	<a href="">WDECLocale_eo</a>,
+	<a href="">WDECLocale_es</a>,
+	<a href="">WDECLocale_et</a>,
+	<a href="">WDECLocale_eu</a>,
+	<a href="">WDECLocale_fa</a>,
+	<a href="">WDECLocale_fi</a>,
+	<a href="">WDECLocale_fr</a>,
+	<a href="">WDECLocale_ga</a>,
+	<a href="">WDECLocale_gl</a>,
+	<a href="">WDECLocale_gu</a>,
+	<a href="">WDECLocale_hi</a>,
+	<a href="">WDECLocale_hr</a>,
+	<a href="">WDECLocale_ht</a>,
+	<a href="">WDECLocale_hu</a>,
+	<a href="">WDECLocale_hy</a>,
+	<a href="">WDECLocale_id</a>,
+	<a href="">WDECLocale_is</a>,
+	<a href="">WDECLocale_it</a>,
+	<a href="">WDECLocale_iw</a>,
+	<a href="">WDECLocale_ja</a>,
+	<a href="">WDECLocale_ka</a>,
+	<a href="">WDECLocale_kn</a>,
+	<a href="">WDECLocale_ko</a>,
+	<a href="">WDECLocale_la</a>,
+	<a href="">WDECLocale_lt</a>,
+	<a href="">WDECLocale_lv</a>,
+	<a href="">WDECLocale_mk</a>,
+	<a href="">WDECLocale_ms</a>,
+	<a href="">WDECLocale_mt</a>,
+	<a href="">WDECLocale_nl</a>,
+	<a href="">WDECLocale_no</a>,
+	<a href="">WDECLocale_pl</a>,
+	<a href="">WDECLocale_pt</a>,
+	<a href="">WDECLocale_ro</a>,
+	<a href="">WDECLocale_ru</a>,
+	<a href="">WDECLocale_sk</a>,
+	<a href="">WDECLocale_sl</a>,
+	<a href="">WDECLocale_sq</a>,
+	<a href="">WDECLocale_sr</a>,
+	<a href="">WDECLocale_sv</a>,
+	<a href="">WDECLocale_sw</a>,
+	<a href="">WDECLocale_ta</a>,
+	<a href="">WDECLocale_te</a>,
+	<a href="">WDECLocale_th</a>,
+	<a href="">WDECLocale_tl</a>,
+	<a href="">WDECLocale_tr</a>,
+	<a href="">WDECLocale_uk</a>,
+	<a href="">WDECLocale_ur</a>,
+	<a href="">WDECLocale_vi</a>,
+	<a href="">WDECLocale_yi</a>,
+	<a href="">WDECLocale_zh_CN</a>,
+	<a href="">WDECLocale_zh_TW</a>,
+	<a href="">WDECLocaleTotalNumber</a>,
+};</code></pre>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="WDECLocaleUndefined"></a><code>WDECLocaleUndefined</code></dt>
+<dd>
+
+
+<p>Uninitialized or invalid value</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_af"></a><code>WDECLocale_af</code></dt>
+<dd>
+
+
+<p>Afrikaans                   Afrikaans</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_ar"></a><code>WDECLocale_ar</code></dt>
+<dd>
+
+
+<p>Arabic                      عربي</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_az"></a><code>WDECLocale_az</code></dt>
+<dd>
+
+
+<p>Azerbaijani                 Azərbaycan</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_be"></a><code>WDECLocale_be</code></dt>
+<dd>
+
+
+<p>Belarusian                  Беларускія</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_bg"></a><code>WDECLocale_bg</code></dt>
+<dd>
+
+
+<p>Bulgarian                   Български</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_bn"></a><code>WDECLocale_bn</code></dt>
+<dd>
+
+
+<p>Bengali                     বাঙ্গালী</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_ca"></a><code>WDECLocale_ca</code></dt>
+<dd>
+
+
+<p>Catalan                     català</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_cs"></a><code>WDECLocale_cs</code></dt>
+<dd>
+
+
+<p>Czech                       Česky</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_cy"></a><code>WDECLocale_cy</code></dt>
+<dd>
+
+
+<p>Welsh                       Cymraeg</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_da"></a><code>WDECLocale_da</code></dt>
+<dd>
+
+
+<p>Danish                      Dansk</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_de"></a><code>WDECLocale_de</code></dt>
+<dd>
+
+
+<p>German                      Deutsch</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_el"></a><code>WDECLocale_el</code></dt>
+<dd>
+
+
+<p>Greek                       Ελληνικά</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_en"></a><code>WDECLocale_en</code></dt>
+<dd>
+
+
+<p>English                     English</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_eo"></a><code>WDECLocale_eo</code></dt>
+<dd>
+
+
+<p>Esperanto                   Esperanto</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_es"></a><code>WDECLocale_es</code></dt>
+<dd>
+
+
+<p>Spanish                     Español</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_et"></a><code>WDECLocale_et</code></dt>
+<dd>
+
+
+<p>Estonian                    Eesti</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_eu"></a><code>WDECLocale_eu</code></dt>
+<dd>
+
+
+<p>Basque                      Euskal</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_fa"></a><code>WDECLocale_fa</code></dt>
+<dd>
+
+
+<p>Persian                     پارسی</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_fi"></a><code>WDECLocale_fi</code></dt>
+<dd>
+
+
+<p>Finnish                     Suomi</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_fr"></a><code>WDECLocale_fr</code></dt>
+<dd>
+
+
+<p>French                      Français</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_ga"></a><code>WDECLocale_ga</code></dt>
+<dd>
+
+
+<p>Irish                       Gaeilge</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_gl"></a><code>WDECLocale_gl</code></dt>
+<dd>
+
+
+<p>Galician                    Galicia</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_gu"></a><code>WDECLocale_gu</code></dt>
+<dd>
+
+
+<p>Gujarati                    ગુજરાતી</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_hi"></a><code>WDECLocale_hi</code></dt>
+<dd>
+
+
+<p>Hindi                       हिन्दी भाषा</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_hr"></a><code>WDECLocale_hr</code></dt>
+<dd>
+
+
+<p>Croatian                    Hrvat</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_ht"></a><code>WDECLocale_ht</code></dt>
+<dd>
+
+
+<p>Haitian Creole              kreyòl ayisyen</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_hu"></a><code>WDECLocale_hu</code></dt>
+<dd>
+
+
+<p>Hungarian                   Magyar</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_hy"></a><code>WDECLocale_hy</code></dt>
+<dd>
+
+
+<p>Armenian                    հայերեն</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_id"></a><code>WDECLocale_id</code></dt>
+<dd>
+
+
+<p>Indonesian                  Bahasa Indonesia</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_is"></a><code>WDECLocale_is</code></dt>
+<dd>
+
+
+<p>Icelandic                   Icelandic</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_it"></a><code>WDECLocale_it</code></dt>
+<dd>
+
+
+<p>Italian                     Italiano</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_iw"></a><code>WDECLocale_iw</code></dt>
+<dd>
+
+
+<p>Hebrew                      עברית</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_ja"></a><code>WDECLocale_ja</code></dt>
+<dd>
+
+
+<p>Japanese                    日本語</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_ka"></a><code>WDECLocale_ka</code></dt>
+<dd>
+
+
+<p>Georgian                    საქართველოს</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_kn"></a><code>WDECLocale_kn</code></dt>
+<dd>
+
+
+<p>Kannadac                    Kannadac</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_ko"></a><code>WDECLocale_ko</code></dt>
+<dd>
+
+
+<p>Korean                      한국어</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_la"></a><code>WDECLocale_la</code></dt>
+<dd>
+
+
+<p>Latin                       lingua latina</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_lt"></a><code>WDECLocale_lt</code></dt>
+<dd>
+
+
+<p>Lithuanian                  lietuvis</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_lv"></a><code>WDECLocale_lv</code></dt>
+<dd>
+
+
+<p>Latvian                     latvietis</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_mk"></a><code>WDECLocale_mk</code></dt>
+<dd>
+
+
+<p>Macedonian                  македонски</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_ms"></a><code>WDECLocale_ms</code></dt>
+<dd>
+
+
+<p>Malay                       Melayu</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_mt"></a><code>WDECLocale_mt</code></dt>
+<dd>
+
+
+<p>Maltese                     Malti</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_nl"></a><code>WDECLocale_nl</code></dt>
+<dd>
+
+
+<p>Dutch                       Nederlands</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_no"></a><code>WDECLocale_no</code></dt>
+<dd>
+
+
+<p>Norwegian                   Norsk</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_pl"></a><code>WDECLocale_pl</code></dt>
+<dd>
+
+
+<p>Polish                      Polski</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_pt"></a><code>WDECLocale_pt</code></dt>
+<dd>
+
+
+<p>Portuguese                  Português</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_ro"></a><code>WDECLocale_ro</code></dt>
+<dd>
+
+
+<p>Romanian                    Română</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_ru"></a><code>WDECLocale_ru</code></dt>
+<dd>
+
+
+<p>Russian                     Русский</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_sk"></a><code>WDECLocale_sk</code></dt>
+<dd>
+
+
+<p>Slovak                      slovenčina</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_sl"></a><code>WDECLocale_sl</code></dt>
+<dd>
+
+
+<p>Slovenian                   Slovenski jezik</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_sq"></a><code>WDECLocale_sq</code></dt>
+<dd>
+
+
+<p>Albanian                    shqiptar</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_sr"></a><code>WDECLocale_sr</code></dt>
+<dd>
+
+
+<p>Serbian                     Србин</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_sv"></a><code>WDECLocale_sv</code></dt>
+<dd>
+
+
+<p>Swedish                     Svenska</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_sw"></a><code>WDECLocale_sw</code></dt>
+<dd>
+
+
+<p>Swahili                     Svahili</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_ta"></a><code>WDECLocale_ta</code></dt>
+<dd>
+
+
+<p>Tamil                       தமிழ்</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_te"></a><code>WDECLocale_te</code></dt>
+<dd>
+
+
+<p>Telugu                      తెలుగు</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_th"></a><code>WDECLocale_th</code></dt>
+<dd>
+
+
+<p>Thai                        ภาษาไทย</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_tl"></a><code>WDECLocale_tl</code></dt>
+<dd>
+
+
+<p>Filipino                    Pilipino</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_tr"></a><code>WDECLocale_tr</code></dt>
+<dd>
+
+
+<p>Turkish                     Türkçe</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_uk"></a><code>WDECLocale_uk</code></dt>
+<dd>
+
+
+<p>Ukrainian                   Українська</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_ur"></a><code>WDECLocale_ur</code></dt>
+<dd>
+
+
+<p>Urdu                        اردو</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_vi"></a><code>WDECLocale_vi</code></dt>
+<dd>
+
+
+<p>Vietnamese                  ngôn ngư Việt nam</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_yi"></a><code>WDECLocale_yi</code></dt>
+<dd>
+
+
+<p>Yiddish                     ייִדיש</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_zh_CN"></a><code>WDECLocale_zh_CN</code></dt>
+<dd>
+
+
+<p>Chinese (Simplified)        中文（简体)</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocale_zh_TW"></a><code>WDECLocale_zh_TW</code></dt>
+<dd>
+
+
+<p>Chinese (Traditional)       中文（繁体）</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECLocaleTotalNumber"></a><code>WDECLocaleTotalNumber</code></dt>
+<dd>
+
+
+<p>Total number of values. It is used for validation and handled as invalid value</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECLocale.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">WDECLocale.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 Wirecard AG. All rights reserved. Updated: 2020-03-27</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

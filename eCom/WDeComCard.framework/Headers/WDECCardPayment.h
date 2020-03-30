@@ -24,7 +24,7 @@
  *  @brief Prompt [Card Holder] for version of 3DS.
  *  @details Default value is nil.
  */
-@property (assign, nonatomic) NSString *versionThreeD;
+@property (strong, nonatomic, nullable) NSString *versionThreeD;
 
 /**
  *  @brief Indicates that the Transaction Request should proceed with the 3D Secure workflow if the [Card Holder] is enrolled. Otherwise, the transaction proceeds without 3D Secure
@@ -44,7 +44,7 @@
 @property (assign, nonatomic, getter=isSecurityCodeRequired) BOOL requireSecurityCode;
 
 /**
- @Used to signalize card token usage
+ * @brief Used to signalize card token usage
  */
 @property (assign, nonatomic, getter=istokenIndicatorUsed) BOOL tokenUsageIndicator;
 

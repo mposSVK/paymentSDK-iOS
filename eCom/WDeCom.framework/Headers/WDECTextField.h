@@ -45,5 +45,7 @@ typedef NS_ENUM(NSUInteger, WDECCardIconsStyle) {
 - (void)hideText;
 - (void)showText;
 
+- (BOOL)verify:(nullable NSString *)verifyText;
+
 @end
 

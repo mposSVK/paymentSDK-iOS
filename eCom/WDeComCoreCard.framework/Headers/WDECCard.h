@@ -30,6 +30,11 @@
 @property (assign, nonatomic) WDECCardBrand brand;
 
 /**
+ @brief Card brand
+ */
+@property (assign, nonatomic) WDECCardBrandSelection brandSelection;
+
+/**
 @brief Token usage indicator
 */
 @property (assign, nonatomic, getter=istokenIndicatorUsed) BOOL tokenUsageIndicator;
