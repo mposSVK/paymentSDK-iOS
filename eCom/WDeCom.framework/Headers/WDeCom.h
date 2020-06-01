@@ -31,6 +31,12 @@ FOUNDATION_EXPORT const unsigned char WDeComVersionString[];
 #import <WDeCom/WDECTransactionType.h>
 #import <WDeCom/WDECLoyaltyCard.h>
 #import <WDeCom/WDECCardData.h>
+#import <WDeCom/WDECOrderItemType.h>
+#import <WDeCom/WDECProviderData.h>
+#import <WDeCom/WDECAdditionalProviderData.h>
+#import <WDeCom/WDECConsumerReceiptFormat.h>
+#import <WDeCom/WDECConsumerReceipt.h>
+#import <WDeCom/WDECEncoding.h>
 
 // UIAppearance elements
 #import <WDeCom/WDECAmountLabel.h>
@@ -63,3 +69,4 @@ FOUNDATION_EXPORT const unsigned char WDeComVersionString[];
 #import <WDeCom/WDECView.h>
 #import <WDeCom/WDECCameraAccessLabel.h>
 #import <WDeCom/WDECCameraAccessButton.h>
+

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import <WDeCom/WDECCurrency.h>
+#import <WDeCom/WDECOrderItemType.h>
 
 /** @addtogroup ios_sdk
  *  @{
@@ -55,6 +56,18 @@
  @details It is mandatory
  */
 @property (strong, nonatomic) NSDecimalNumber *quantity;
+
+/**
+ @brief The discount value for one order item. 
+ @details It is optional
+ */
+@property (strong, nonatomic) NSDecimalNumber *discount;
+
+/**
+ @brief Order item type.
+ @details It is optional
+*/
+@property (assign, nonatomic) WDECOrderItemType type;
 
 @end
 

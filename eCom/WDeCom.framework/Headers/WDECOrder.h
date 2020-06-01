@@ -38,7 +38,7 @@
 @property (strong, nonatomic, nullable) NSString *detail;
 /**
  @brief Order Items
- @details At the moment supported by WDECPayPalPayment method. Order item details may be sent along with transaction requests. This information of the shopping basket will be displayed in WDECPayPalPayment during the checkout and later stored as a part of the payment details in PayPal. However, they cannot be obtained from the Payment Gateway later as part of transaction details.
+ @details At the moment supported by WDECPayPalPayment & WDECKlarnaPayment method. Order item details may be sent along with transaction requests. This information of the shopping basket will be displayed in WDECPayPalPayment during the checkout and later stored as a part of the payment details in PayPal. However, they cannot be obtained from the Payment Gateway later as part of transaction details.
  */
 @property (strong, nonatomic, nullable) NSArray<WDECOrderItem *> *items;
 

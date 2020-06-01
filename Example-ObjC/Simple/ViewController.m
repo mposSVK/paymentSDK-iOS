@@ -17,6 +17,7 @@
 #import <WDeComCard/WDeComCard.h>
 #import <WDeComPayPal/WDeComPayPal.h>
 #import <WDeComSEPA/WDeComSEPA.h>
+#import <WDeComKlarna/WDeComKlarna.h>
 
 #define AMOUNT [NSDecimalNumber decimalNumberWithMantissa:199 exponent:-2 isNegative:NO]
 
@@ -25,6 +26,7 @@ NSString *const PMTitleCard                     = @"Card";
 NSString *const PMTitleCardManualBrandSelection = @"Card manual brand selection";
 NSString *const PMTitlePayPal                   = @"PayPal";
 NSString *const PMTitleSEPA                     = @"SEPA";
+NSString *const PMTitleKlarna                   = @"Klarna";
 
 @interface ViewController ()
 
@@ -81,6 +83,7 @@ NSString *const PMTitleSEPA                     = @"SEPA";
     [ac addAction:[UIAlertAction actionWithTitle:PMTitleCardManualBrandSelection    style:UIAlertActionStyleDefault handler:handler]];
     [ac addAction:[UIAlertAction actionWithTitle:PMTitlePayPal                      style:UIAlertActionStyleDefault handler:handler]];
     [ac addAction:[UIAlertAction actionWithTitle:PMTitleSEPA                        style:UIAlertActionStyleDefault handler:handler]];
+    [ac addAction:[UIAlertAction actionWithTitle:PMTitleKlarna                      style:UIAlertActionStyleDefault handler:handler]];
     [ac addAction:[UIAlertAction actionWithTitle:@"Cancel"                          style:UIAlertActionStyleCancel handler:handler]];
     
     [self presentViewController:ac animated:YES completion:nil];
@@ -110,6 +113,8 @@ NSString *const PMTitleSEPA                     = @"SEPA";
         result = [self createPaymentPayPal];
     } else if ([title isEqualToString:PMTitleSEPA]) {
         result = [self createPaymentSEPA];
+    } else if ([title isEqualToString:PMTitleKlarna]) {
+        result = [self createPaymentKlarna];
     }
     return result;
 }
@@ -195,6 +200,60 @@ NSString *const PMTitleSEPA                     = @"SEPA";
     static NSString *const WD_MERCHANT_ACCOUNT_ID = @"4c901196-eff7-411e-82a3-5ef6b6860d64";
     static NSString *const WD_MERCHANT_SECRET_KEY = @"ecdf5990-0372-47cd-a55d-037dccfe9d25";
     [self merchant:WD_MERCHANT_ACCOUNT_ID signPayment:payment byMerchantSecretKey:WD_MERCHANT_SECRET_KEY];
+    return payment;
+}
+
+- (WDECPayment *)createPaymentKlarna
+{
+    WDECLocalize localize = [WDECLocalize appearance];
+    BOOL locale_de = localize.locale == WDECLocalize_de;
+
+    WDECCountry country = locale_de ? WDECCountryDE : WDECCountryGB;
+
+    WDECKlarnaPayment *payment = [WDECKlarnaPayment new];
+    payment.amount = AMOUNT;
+    payment.currency = locale_de ? WDECCurrencyGetISOCode(WDECCurrencyEUR) : WDECCurrencyGetISOCode(WDECCurrencyGBP);
+    payment.transactionType = WDECTransactionTypeAuthorization;
+    payment.category = WDECKlarnaCategoryDebit;
+    payment.locale = locale_de ? WDECLocalize_de : WDECLocale_en;
+    /**
+    @Warning: We ask you to never share your Secret Key with anyone, or store it inside your application or phone. This is crucial to ensure the security of your transactions.
+    You will be generating the signature on your own server’s backend, as it is the only place where you will store your Secret Key.
+    */
+    static NSString *const WD_MERCHANT_ACCOUNT_ID = @"f570c123-62f1-4a0d-8688-d999a05d50d4";
+    static NSString *const WD_MERCHANT_SECRET_KEY = @"0fb50d2c-8ab5-4d53-ac69-b707b1319148";
+    [self merchant:WD_MERCHANT_ACCOUNT_ID signPayment:payment byMerchantSecretKey:WD_MERCHANT_SECRET_KEY];
+    
+    payment.category = WDECKlarnaCategoryPayLater;
+    payment.appScheme = @"iPay.Klarna";
+
+    WDECCustomerData *accountHolder = [WDECCustomerData new];
+    
+    WDECAddress* address = [WDECAddress new];
+    address.country = country;
+    accountHolder.address = address;
+
+    payment.accountHolder = accountHolder;
+
+    WDECOrderItem *order1 = [WDECOrderItem new];
+    order1.quantity = [NSDecimalNumber decimalNumberWithString:@"1"];
+    order1.name =  @"Item 1";
+    order1.articleNumber =  @"1";
+    order1.amount =  [NSDecimalNumber decimalNumberWithString:@"20"];
+    order1.amountCurrency = locale_de ? WDECCurrencyDE : WDECCurrencyGBP;
+    order1.type = WDECOrderItemTypePhysical;
+
+    WDECOrderItem *order2 = [WDECOrderItem new];
+    order2.quantity = [NSDecimalNumber decimalNumberWithString:@"1"];
+    order2.name =  @"Item 2";
+    order2.articleNumber =  @"2";
+    order2.amount =  [NSDecimalNumber decimalNumberWithString:@"5.0"];
+    order2.amountCurrency = locale_de ? WDECCurrencyDE : WDECCurrencyGBP;
+    order2.type = WDECOrderItemTypeDiscount;
+
+    payment.order = [WDECOrder new];
+    payment.order.items = @[order1, order2];
+
     return payment;
 }
 

@@ -41,10 +41,9 @@ typedef NS_ENUM(NSUInteger, WDECTransactionType) {
      */
     WDECTransactionTypeDebit,
     
-    //ToDo: Description
     /** Loyality support
      
-     String representation: enrollment
+        String representation: enrollment
      */
     WDECTransactionTypeEnrollment,
 

@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WDECView.h"
 
 typedef NS_ENUM(NSInteger, WDECNavigationBarStyle) {
     WDECNavigationBarStyleUndefined = 0,
@@ -47,6 +46,7 @@ typedef NS_ENUM(NSInteger, WDECStatusBarStyle) {
 @property (assign, nonatomic) /*IBInspectable*/ BOOL isResizableWithKeyboard;
 @property (assign, nonatomic) /*IBInspectable*/ BOOL resizeAnimated;
 
+- (void)handleDefaultNavbar;
 
 - (void)enableBackButton:(BOOL)enable;
 - (void)enableRightButton:(BOOL)enable;

@@ -74,6 +74,7 @@ class AnimatedCardfieldVC: PaymemtVC, WDECAnimatedCardFieldDelegate {
         case WDECAnimatedCardFieldState.securityCodeValid: text = "security code valid"
         case WDECAnimatedCardFieldState.cardholderInvalid: text = "cardholder invalid"
         case WDECAnimatedCardFieldState.cardholderEditting: text = "cardholder editting"
+        case WDECAnimatedCardFieldState.supportedCardsInvalid: text = "unsupported usage of cards CUP & UPI type at the same time"
         }
         
         self.animatedCardfieldStateLabel.text = text

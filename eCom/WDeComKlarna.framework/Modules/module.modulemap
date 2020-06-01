@@ -1,0 +1,6 @@
+framework module WDeComKlarna {
+  umbrella header "WDeComKlarna.h"
+
+  export *
+  module * { export * }
+}

@@ -20,6 +20,7 @@
 #import <WDeCom/WDECMerchantRiskIndicator.h>
 #import <WDeCom/WDECLoyaltyCard.h>
 #import <WDeCom/WDECCardData.h>
+#import <WDeCom/WDECAdditionalProviderData.h>
 
 @class WDECPaymentMethod;
 
@@ -168,6 +169,12 @@
  * @details Typically used by card for WDECTransactionTypeEnrollment transaction. It's required field for transaction without acount holder identification data (email, phone)
  */
 @property (strong, nonatomic, nullable) NSString *consumerID;
+
+/**
+ * @brief Extre provider data informations
+ * @details Typically used by payment method WDECKlarnaPaymentMethod 
+ */
+@property (strong, nonatomic, nullable) WDECAdditionalProviderData *additionalProviderData;
 
 /**
  @brief initialize payment with mandatory parameters

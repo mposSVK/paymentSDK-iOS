@@ -34,6 +34,9 @@ typedef NS_ENUM (NSUInteger, WDECPaymentMethodName) {
     
     /** SEPA Direct Debit */
     WDECPaymentMethodNameSEPADirectDebit,
+   
+    /** Klarna */ 
+    WDECPaymentMethodNameKlarna,
 
     /** Total number of values. It is used for validation and handled as invalid value */
     WDECPaymentMethodNameTotalNumber

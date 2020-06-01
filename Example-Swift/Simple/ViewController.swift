@@ -13,6 +13,7 @@ import WDeCom
 import WDeComCard
 import WDeComPayPal
 import WDeComSEPA
+import WDeComKlarna
 
 let AMOUNT = NSDecimalNumber.init(mantissa: 199, exponent: -2, isNegative: false)
 
@@ -21,6 +22,7 @@ let PMTitleCard     = "Card"
 let PMTitleCardManualBrandSelection = "Card manual brand selection"
 let PMTitlePayPal   = "PayPal"
 let PMTitleSEPA     = "SEPA"
+let PMTitleKlarna   = "Klarna"
 
 class ViewController: PaymemtVC, UIActionSheetDelegate, UIPopoverPresentationControllerDelegate {
     
@@ -68,6 +70,7 @@ class ViewController: PaymemtVC, UIActionSheetDelegate, UIPopoverPresentationCon
         actionSheetController.addAction(UIAlertAction(title: PMTitleCardManualBrandSelection, style: .default, handler: handler))
         actionSheetController.addAction(UIAlertAction(title: PMTitlePayPal, style: .default, handler: handler))
         actionSheetController.addAction(UIAlertAction(title: PMTitleSEPA, style: .default, handler: handler))
+        actionSheetController.addAction(UIAlertAction(title: PMTitleKlarna, style: .default, handler: handler))
         actionSheetController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: handler))
         actionSheetController.popoverPresentationController?.sourceView = self.view
         actionSheetController.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.width / 2.0,y: self.view.bounds.height,width: 1.0,height: 1.0)
@@ -98,6 +101,7 @@ class ViewController: PaymemtVC, UIActionSheetDelegate, UIPopoverPresentationCon
             cardLayout.manualCardBrandSelectionRequired = true
         case PMTitlePayPal : result = self.createPaymentPayPal()
         case PMTitleSEPA : result = self.createPaymentSEPA()
+        case PMTitleKlarna: result = self.createPaymentKlarna()
         default : result = WDECPayment()
         }
         return result
@@ -182,6 +186,74 @@ class ViewController: PaymemtVC, UIActionSheetDelegate, UIPopoverPresentationCon
         let WD_MERCHANT_SECRET_KEY = "ecdf5990-0372-47cd-a55d-037dccfe9d25"
         
         self.merchantSignedPaymentByMerchantSecretKey(merchantAccountID: WD_MERCHANT_ACCOUNT_ID, payment: payment, merchantSecretKey: WD_MERCHANT_SECRET_KEY)
+        
+        return payment
+    }
+    
+    func createPaymentKlarna() -> WDECPayment {
+        
+        let localize = WDECLocalize.appearance()
+        let locale_de = localize.locale == ._de;
+        
+        let payment = WDECKlarnaPayment()
+        payment.amount = AMOUNT
+        payment.currency = locale_de ? WDECCurrencyGetISOCode(WDECCurrency.EUR) : WDECCurrencyGetISOCode(WDECCurrency.GBP)
+        payment.transactionType = WDECTransactionType.authorization
+        payment.category = WDECKlarnaCategory.payLater;
+        
+        /**
+        @Warning: We ask you to never share your Secret Key with anyone, or store it inside your application or phone. This is crucial to ensure the security of your transactions.
+        You will be generating the signature on your own server’s backend, as it is the only place where you will store your Secret Key.
+        */
+        let WD_MERCHANT_ACCOUNT_ID = "f570c123-62f1-4a0d-8688-d999a05d50d4"
+        let WD_MERCHANT_SECRET_KEY = "0fb50d2c-8ab5-4d53-ac69-b707b1319148"
+
+        self.merchantSignedPaymentByMerchantSecretKey(merchantAccountID: WD_MERCHANT_ACCOUNT_ID, payment: payment, merchantSecretKey: WD_MERCHANT_SECRET_KEY)
+                        
+        let country = localize.locale == ._de ? WDECCountry.DE : WDECCountry.GB
+
+        payment.transactionType = WDECTransactionType.authorization
+        payment.locale = locale_de ? WDECLocale._de : WDECLocale._en;
+
+        payment.category = WDECKlarnaCategory.payLater;
+        payment.appScheme = "iPay.Klarna";
+
+        let accountHolder = WDECCustomerData();
+        let address = WDECAddress()
+        address.country = country;
+        accountHolder.address = address;
+
+        payment.accountHolder = accountHolder;
+
+        var cartOrder = [WDECOrderItem]()
+        
+        var orderItem = WDECOrderItem()
+        orderItem.articleNumber = "1"
+        orderItem.name = "Item 1"
+        orderItem.amount = NSDecimalNumber(integerLiteral: 100)
+        orderItem.quantity = NSDecimalNumber(integerLiteral: 1)
+        orderItem.amountCurrency = locale_de ? WDECCurrency.EUR : WDECCurrency.GBP
+        orderItem.type = WDECOrderItemType.physical
+
+        cartOrder.append(orderItem)
+        
+        orderItem = WDECOrderItem()
+        orderItem.articleNumber = "2"
+        orderItem.name = "Item 2"
+        orderItem.amount = NSDecimalNumber(integerLiteral: 99)
+        orderItem.quantity = NSDecimalNumber(integerLiteral: 1)
+        orderItem.amountCurrency = locale_de ? WDECCurrency.EUR : WDECCurrency.GBP
+        orderItem.type = WDECOrderItemType.physical
+
+        cartOrder.append(orderItem)
+        
+        let order = WDECOrder()
+        order.descriptor = "DEMO DESCRIPTOR"
+        order.number = NSUUID.init().uuidString
+        order.detail = "DEMO ORDER DETAIL"
+        order.items = cartOrder
+        
+        payment.order = order
         
         return payment
     }

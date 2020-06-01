@@ -84,6 +84,7 @@ class CardfieldVC: PaymemtVC, UIActionSheetDelegate, WDECCardFieldDelegate {
         case WDECCardFieldState.securityCodeIncomplete: text = "security code incomplete"
         case WDECCardFieldState.securityCodeInvalid: text = "security code invalid"
         case WDECCardFieldState.securityCodeValid: text = "security code valid"
+        case WDECCardFieldState.supportedCardsInvalid: text = "unsupported usage of cards CUP & UPI type at the same time"
         }
         
         self.cardFieldStateLabel.text = text
