@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>WDECCardFieldState Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/prism.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/format.js"></script>
+	<script src="../js/prism.js" data-manual></script>
+	<script>
+		jQuery.noConflict();
+		jQuery( document ).ready(function( $ ) {
+ 			$("pre code").each(function(i, block) {
+				$(this).addClass("language-objectivec")
+				$(this).formatObjectiveC();
+			});
+
+			Prism.highlightAll()
+		});
+	</script>
+
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">WDeCom </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Wirecard AG</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">WDECCardFieldState Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>WDECCardField.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">WDECCardFieldState</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p><a href="../Classes/WDECCardField.html">WDECCardField</a> states emitted during user interacion</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <pre><code>typedef NS_ENUM(NSUInteger, WDECCardFieldState ) { 
+	<a href="">WDECCardFieldStateCardInitial</a> = 0,
+	<a href="">WDECCardFieldStateJailbrokenDevice</a>,
+	<a href="">WDECCardFieldStateCardValid</a>,
+	<a href="">WDECCardFieldStateCardUnsupported</a>,
+	<a href="">WDECCardFieldStateSupportedCardsInvalid</a>,
+	<a href="">WDECCardFieldStateNumberEditting</a>,
+	<a href="">WDECCardFieldStateNumberIncomplete</a>,
+	<a href="">WDECCardFieldStateNumberInvalid</a>,
+	<a href="">WDECCardFieldStateNumberValid</a>,
+	<a href="">WDECCardFieldStateMonthEditting</a>,
+	<a href="">WDECCardFieldStateYearEditting</a>,
+	<a href="">WDECCardFieldStateExpirationDateIncomplete</a>,
+	<a href="">WDECCardFieldStateExpirationDateInvalid</a>,
+	<a href="">WDECCardFieldStateExpirationDateValid</a>,
+	<a href="">WDECCardFieldStateSecurityCodeEditting</a>,
+	<a href="">WDECCardFieldStateSecurityCodeIncomplete</a>,
+	<a href="">WDECCardFieldStateSecurityCodeInvalid</a>,
+	<a href="">WDECCardFieldStateSecurityCodeValid</a>,
+};</code></pre>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="WDECCardFieldStateCardInitial"></a><code>WDECCardFieldStateCardInitial</code></dt>
+<dd>
+
+
+<p>Initial state and state after <a href="@ref%20[WDECCardField](../Classes/WDECCardField.html">-[WDECCardField clear]</a>.clear)</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCardField.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCardFieldStateJailbrokenDevice"></a><code>WDECCardFieldStateJailbrokenDevice</code></dt>
+<dd>
+
+
+<p>User&rsquo;s device is jailbroken</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCardField.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCardFieldStateCardValid"></a><code>WDECCardFieldStateCardValid</code></dt>
+<dd>
+
+
+<p>User entered valid card data</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCardField.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCardFieldStateCardUnsupported"></a><code>WDECCardFieldStateCardUnsupported</code></dt>
+<dd>
+
+
+<p>User is trying to type unsupported card type</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCardField.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCardFieldStateSupportedCardsInvalid"></a><code>WDECCardFieldStateSupportedCardsInvalid</code></dt>
+<dd>
+
+
+<p>User is trying to use supported cards CUP &amp; UPI type at the same time</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCardField.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCardFieldStateNumberEditting"></a><code>WDECCardFieldStateNumberEditting</code></dt>
+<dd>
+
+
+<p>Card number UITextField is first responder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCardField.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCardFieldStateNumberIncomplete"></a><code>WDECCardFieldStateNumberIncomplete</code></dt>
+<dd>
+
+
+<p>Card number is incomplete</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCardField.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCardFieldStateNumberInvalid"></a><code>WDECCardFieldStateNumberInvalid</code></dt>
+<dd>
+
+
+<p>Card number is invalid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCardField.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCardFieldStateNumberValid"></a><code>WDECCardFieldStateNumberValid</code></dt>
+<dd>
+
+
+<p>User entered valid card number</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCardField.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCardFieldStateMonthEditting"></a><code>WDECCardFieldStateMonthEditting</code></dt>
+<dd>
+
+
+<p>Expiration month UITextField is first responder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCardField.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCardFieldStateYearEditting"></a><code>WDECCardFieldStateYearEditting</code></dt>
+<dd>
+
+
+<p>Expiration year UITextField is first responder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCardField.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCardFieldStateExpirationDateIncomplete"></a><code>WDECCardFieldStateExpirationDateIncomplete</code></dt>
+<dd>
+
+
+<p>Expiration date is incomplete</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCardField.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCardFieldStateExpirationDateInvalid"></a><code>WDECCardFieldStateExpirationDateInvalid</code></dt>
+<dd>
+
+
+<p>Expiration date is invalid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCardField.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCardFieldStateExpirationDateValid"></a><code>WDECCardFieldStateExpirationDateValid</code></dt>
+<dd>
+
+
+<p>User entered valid expiration date</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCardField.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCardFieldStateSecurityCodeEditting"></a><code>WDECCardFieldStateSecurityCodeEditting</code></dt>
+<dd>
+
+
+<p>Security code UITextField became first responder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCardField.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCardFieldStateSecurityCodeIncomplete"></a><code>WDECCardFieldStateSecurityCodeIncomplete</code></dt>
+<dd>
+
+
+<p>Security code is incomplete</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCardField.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCardFieldStateSecurityCodeInvalid"></a><code>WDECCardFieldStateSecurityCodeInvalid</code></dt>
+<dd>
+
+
+<p>Security code is invalid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCardField.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCardFieldStateSecurityCodeValid"></a><code>WDECCardFieldStateSecurityCodeValid</code></dt>
+<dd>
+
+
+<p>Security code is valid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCardField.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">WDECCardField.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 Wirecard AG. All rights reserved. Updated: 2020-05-26</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
