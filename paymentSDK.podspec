@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'paymentSDK'
-    s.version          = '4.4.1'
+    s.version          = '4.4.2'
     s.summary          = 'Wirecard paymentSDK - online payments'
 
     s.description      = <<-DESC
