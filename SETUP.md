@@ -10,7 +10,7 @@
     > export BREW_HOME=$HOME/homebrew
     > export PATH=$BREW_HOME/bin:$PATH
     ```
-   Commands to run in *bash* shell
+    Commands to run in *bash* shell
     ```
     > brew --version
     ```
@@ -31,7 +31,7 @@
     > ruby --version
     ```
 
-- Install Cacoa Pods
+- Install CacoaPods
 
     See https://guides.cocoapods.org/using/getting-started.html#toc_3
     
