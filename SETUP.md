@@ -5,7 +5,7 @@
     ```
     > mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
     ```
-    Adapt your *.bashrc* 
+    Adapt your *.bash_profile* 
     ```
     > export BREW_HOME=$HOME/homebrew
     > export PATH=$BREW_HOME/bin:$PATH
@@ -21,7 +21,7 @@
     ```
     > brew install ruby@2.6
     ```
-    Adapt your *.bashrc* 
+    Adapt your *.bash_profile* 
     ```
     > export RUBY_HOME=$HOME/ruby
     > export PATH=$RUBY_HOME/bin:$PATH
@@ -35,7 +35,7 @@
 
     See https://guides.cocoapods.org/using/getting-started.html#toc_3
     
-    Adapt your *.bashrc*
+    Adapt your *.bash_profile*
     ```
     > export GEM_HOME=$HOME/.gem
     > export PATH=$GEM_HOME/ruby/2.6.0/bin:$GEM_HOME/bin:$PATH
