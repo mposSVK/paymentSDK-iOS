@@ -16,7 +16,7 @@ DESC
     s.homepage         = 'https://github.com/wirecard/paymentSDK-iOS'
     s.documentation_url= 'https://wirecard.github.io/paymentSDK-iOS/integration/latest'
     s.license          = { :type => 'MIT' }
-    s.authors          = { 'Stefan Sedlak' => 'stefan.sedlak@wirecard.com', 'Peter Stavny' => 'peter.stavny@wirecard.com' }
+    s.authors          = { 'Mobile Payment' => 'mobile.payment@wirecard.com' }
     s.source           = { :git => 'https://github.com/wirecard/paymentSDK-iOS.git', :tag => s.version }
     s.platform         = :ios
     s.ios.deployment_target = '11.0'
