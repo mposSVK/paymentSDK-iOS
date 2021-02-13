@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'paymentSDK'
-    s.version          = '4.4.2'
+    s.version          = '4.2.1'
     s.summary          = 'Wirecard paymentSDK - online payments'
 
     s.description      = <<-DESC
@@ -138,14 +138,14 @@ DESC
         ss.dependency            'paymentSDK/Core'
         ss.dependency            'ZappMerchantLib', '~> 1.1.2'
     end
-
+    
     s.subspec 'Klarna-xcode-10.2-fat' do |sk|
         sk.vendored_frameworks = 'eCom/WDeComKlarna.framework'
         sk.resource            = 'eCom/WDeComKlarna.framework/WDeComKlarna.bundle'
         sk.dependency            'paymentSDK/Core'
         sk.dependency            'KlarnaMobileSDK/xcode-10.2-fat', '~> 2.0.14'
     end
-
+           
     s.subspec 'Klarna-xcode-10.3-fat' do |sk|
         sk.vendored_frameworks = 'eCom/WDeComKlarna.framework'
         sk.resource            = 'eCom/WDeComKlarna.framework/WDeComKlarna.bundle'
@@ -153,7 +153,7 @@ DESC
         sk.dependency            'paymentSDK/Core'
         sk.dependency            'KlarnaMobileSDK/xcode-10.3-fat', '~> 2.0.14'
     end
-
+            
     s.subspec 'Klarna-xcode-11.3-fat' do |sk|
         sk.vendored_frameworks = 'eCom/WDeComKlarna.framework'
         sk.resource            = 'eCom/WDeComKlarna.framework/WDeComKlarna.bundle'
@@ -161,7 +161,7 @@ DESC
         sk.dependency            'paymentSDK/Core'
         sk.dependency            'KlarnaMobileSDK/xcode-11.3-fat', '~> 2.0.14'
     end
-
+            
     s.subspec 'Klarna-xcode-11.4.1-fat' do |sk|
         sk.vendored_frameworks = 'eCom/WDeComKlarna.framework'
         sk.resource            = 'eCom/WDeComKlarna.framework/WDeComKlarna.bundle'
@@ -169,7 +169,7 @@ DESC
         sk.dependency            'paymentSDK/Core'
         sk.dependency            'KlarnaMobileSDK/xcode-11.4.1-fat', '~> 2.0.14'
     end
-
+    
       s.default_subspecs = 'All', 'Klarna-xcode-11.4.1-fat'
-
+    
 end
