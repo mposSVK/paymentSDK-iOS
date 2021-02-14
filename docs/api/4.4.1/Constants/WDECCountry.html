@@ -1,0 +1,4724 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>WDECCountry Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/prism.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/format.js"></script>
+	<script src="../js/prism.js" data-manual></script>
+	<script>
+		jQuery.noConflict();
+		jQuery( document ).ready(function( $ ) {
+ 			$("pre code").each(function(i, block) {
+				$(this).addClass("language-objectivec")
+				$(this).formatObjectiveC();
+			});
+
+			Prism.highlightAll()
+		});
+	</script>
+
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">WDeCom </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Wirecard AG</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">WDECCountry Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>WDECCountry.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">WDECCountry</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>List of countries supported by ElasticEngine</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <pre><code>typedef NS_ENUM(NSUInteger, WDECCountry ) { 
+	<a href="">WDECCountryUndefined</a> = 0,
+	<a href="">WDECCountryAD</a>,
+	<a href="">WDECCountryAE</a>,
+	<a href="">WDECCountryAF</a>,
+	<a href="">WDECCountryAG</a>,
+	<a href="">WDECCountryAI</a>,
+	<a href="">WDECCountryAL</a>,
+	<a href="">WDECCountryAM</a>,
+	<a href="">WDECCountryAN</a>,
+	<a href="">WDECCountryAO</a>,
+	<a href="">WDECCountryAQ</a>,
+	<a href="">WDECCountryAR</a>,
+	<a href="">WDECCountryAS</a>,
+	<a href="">WDECCountryAT</a>,
+	<a href="">WDECCountryAU</a>,
+	<a href="">WDECCountryAW</a>,
+	<a href="">WDECCountryAX</a>,
+	<a href="">WDECCountryAZ</a>,
+	<a href="">WDECCountryBA</a>,
+	<a href="">WDECCountryBB</a>,
+	<a href="">WDECCountryBD</a>,
+	<a href="">WDECCountryBE</a>,
+	<a href="">WDECCountryBF</a>,
+	<a href="">WDECCountryBG</a>,
+	<a href="">WDECCountryBH</a>,
+	<a href="">WDECCountryBI</a>,
+	<a href="">WDECCountryBJ</a>,
+	<a href="">WDECCountryBL</a>,
+	<a href="">WDECCountryBM</a>,
+	<a href="">WDECCountryBN</a>,
+	<a href="">WDECCountryBO</a>,
+	<a href="">WDECCountryBQ</a>,
+	<a href="">WDECCountryBR</a>,
+	<a href="">WDECCountryBS</a>,
+	<a href="">WDECCountryBT</a>,
+	<a href="">WDECCountryBV</a>,
+	<a href="">WDECCountryBW</a>,
+	<a href="">WDECCountryBY</a>,
+	<a href="">WDECCountryBZ</a>,
+	<a href="">WDECCountryCA</a>,
+	<a href="">WDECCountryCC</a>,
+	<a href="">WDECCountryCD</a>,
+	<a href="">WDECCountryCF</a>,
+	<a href="">WDECCountryCG</a>,
+	<a href="">WDECCountryCH</a>,
+	<a href="">WDECCountryCI</a>,
+	<a href="">WDECCountryCK</a>,
+	<a href="">WDECCountryCL</a>,
+	<a href="">WDECCountryCM</a>,
+	<a href="">WDECCountryCN</a>,
+	<a href="">WDECCountryCO</a>,
+	<a href="">WDECCountryCR</a>,
+	<a href="">WDECCountryCU</a>,
+	<a href="">WDECCountryCV</a>,
+	<a href="">WDECCountryCW</a>,
+	<a href="">WDECCountryCX</a>,
+	<a href="">WDECCountryCY</a>,
+	<a href="">WDECCountryCZ</a>,
+	<a href="">WDECCountryDE</a>,
+	<a href="">WDECCountryDJ</a>,
+	<a href="">WDECCountryDK</a>,
+	<a href="">WDECCountryDM</a>,
+	<a href="">WDECCountryDO</a>,
+	<a href="">WDECCountryDZ</a>,
+	<a href="">WDECCountryEC</a>,
+	<a href="">WDECCountryEE</a>,
+	<a href="">WDECCountryEG</a>,
+	<a href="">WDECCountryEH</a>,
+	<a href="">WDECCountryER</a>,
+	<a href="">WDECCountryES</a>,
+	<a href="">WDECCountryET</a>,
+	<a href="">WDECCountryFI</a>,
+	<a href="">WDECCountryFJ</a>,
+	<a href="">WDECCountryFK</a>,
+	<a href="">WDECCountryFM</a>,
+	<a href="">WDECCountryFO</a>,
+	<a href="">WDECCountryFR</a>,
+	<a href="">WDECCountryGA</a>,
+	<a href="">WDECCountryGB</a>,
+	<a href="">WDECCountryGD</a>,
+	<a href="">WDECCountryGE</a>,
+	<a href="">WDECCountryGF</a>,
+	<a href="">WDECCountryGG</a>,
+	<a href="">WDECCountryGH</a>,
+	<a href="">WDECCountryGI</a>,
+	<a href="">WDECCountryGL</a>,
+	<a href="">WDECCountryGM</a>,
+	<a href="">WDECCountryGN</a>,
+	<a href="">WDECCountryGP</a>,
+	<a href="">WDECCountryGQ</a>,
+	<a href="">WDECCountryGR</a>,
+	<a href="">WDECCountryGS</a>,
+	<a href="">WDECCountryGT</a>,
+	<a href="">WDECCountryGU</a>,
+	<a href="">WDECCountryGW</a>,
+	<a href="">WDECCountryGY</a>,
+	<a href="">WDECCountryHK</a>,
+	<a href="">WDECCountryHM</a>,
+	<a href="">WDECCountryHN</a>,
+	<a href="">WDECCountryHR</a>,
+	<a href="">WDECCountryHS</a>,
+	<a href="">WDECCountryHT</a>,
+	<a href="">WDECCountryHU</a>,
+	<a href="">WDECCountryID</a>,
+	<a href="">WDECCountryIE</a>,
+	<a href="">WDECCountryIL</a>,
+	<a href="">WDECCountryIM</a>,
+	<a href="">WDECCountryIN</a>,
+	<a href="">WDECCountryIO</a>,
+	<a href="">WDECCountryIQ</a>,
+	<a href="">WDECCountryIR</a>,
+	<a href="">WDECCountryIS</a>,
+	<a href="">WDECCountryIT</a>,
+	<a href="">WDECCountryJE</a>,
+	<a href="">WDECCountryJM</a>,
+	<a href="">WDECCountryJO</a>,
+	<a href="">WDECCountryJP</a>,
+	<a href="">WDECCountryKE</a>,
+	<a href="">WDECCountryKG</a>,
+	<a href="">WDECCountryKH</a>,
+	<a href="">WDECCountryKI</a>,
+	<a href="">WDECCountryKM</a>,
+	<a href="">WDECCountryKN</a>,
+	<a href="">WDECCountryKP</a>,
+	<a href="">WDECCountryKR</a>,
+	<a href="">WDECCountryKW</a>,
+	<a href="">WDECCountryKY</a>,
+	<a href="">WDECCountryKZ</a>,
+	<a href="">WDECCountryLA</a>,
+	<a href="">WDECCountryLB</a>,
+	<a href="">WDECCountryLC</a>,
+	<a href="">WDECCountryLI</a>,
+	<a href="">WDECCountryLK</a>,
+	<a href="">WDECCountryLR</a>,
+	<a href="">WDECCountryLS</a>,
+	<a href="">WDECCountryLT</a>,
+	<a href="">WDECCountryLU</a>,
+	<a href="">WDECCountryLV</a>,
+	<a href="">WDECCountryLY</a>,
+	<a href="">WDECCountryMA</a>,
+	<a href="">WDECCountryMC</a>,
+	<a href="">WDECCountryMD</a>,
+	<a href="">WDECCountryME</a>,
+	<a href="">WDECCountryMF</a>,
+	<a href="">WDECCountryMG</a>,
+	<a href="">WDECCountryMH</a>,
+	<a href="">WDECCountryMK</a>,
+	<a href="">WDECCountryML</a>,
+	<a href="">WDECCountryMM</a>,
+	<a href="">WDECCountryMN</a>,
+	<a href="">WDECCountryMO</a>,
+	<a href="">WDECCountryMP</a>,
+	<a href="">WDECCountryMQ</a>,
+	<a href="">WDECCountryMR</a>,
+	<a href="">WDECCountryMS</a>,
+	<a href="">WDECCountryMT</a>,
+	<a href="">WDECCountryMU</a>,
+	<a href="">WDECCountryMV</a>,
+	<a href="">WDECCountryMW</a>,
+	<a href="">WDECCountryMX</a>,
+	<a href="">WDECCountryMY</a>,
+	<a href="">WDECCountryMZ</a>,
+	<a href="">WDECCountryNA</a>,
+	<a href="">WDECCountryNC</a>,
+	<a href="">WDECCountryNE</a>,
+	<a href="">WDECCountryNF</a>,
+	<a href="">WDECCountryNG</a>,
+	<a href="">WDECCountryNI</a>,
+	<a href="">WDECCountryNL</a>,
+	<a href="">WDECCountryNO</a>,
+	<a href="">WDECCountryNP</a>,
+	<a href="">WDECCountryNR</a>,
+	<a href="">WDECCountryNU</a>,
+	<a href="">WDECCountryNZ</a>,
+	<a href="">WDECCountryOM</a>,
+	<a href="">WDECCountryPA</a>,
+	<a href="">WDECCountryPE</a>,
+	<a href="">WDECCountryPF</a>,
+	<a href="">WDECCountryPG</a>,
+	<a href="">WDECCountryPH</a>,
+	<a href="">WDECCountryPK</a>,
+	<a href="">WDECCountryPL</a>,
+	<a href="">WDECCountryPM</a>,
+	<a href="">WDECCountryPN</a>,
+	<a href="">WDECCountryPR</a>,
+	<a href="">WDECCountryPS</a>,
+	<a href="">WDECCountryPT</a>,
+	<a href="">WDECCountryPW</a>,
+	<a href="">WDECCountryPY</a>,
+	<a href="">WDECCountryQA</a>,
+	<a href="">WDECCountryRE</a>,
+	<a href="">WDECCountryRO</a>,
+	<a href="">WDECCountryRS</a>,
+	<a href="">WDECCountryRU</a>,
+	<a href="">WDECCountryRW</a>,
+	<a href="">WDECCountrySA</a>,
+	<a href="">WDECCountrySB</a>,
+	<a href="">WDECCountrySC</a>,
+	<a href="">WDECCountrySD</a>,
+	<a href="">WDECCountrySE</a>,
+	<a href="">WDECCountrySG</a>,
+	<a href="">WDECCountrySH</a>,
+	<a href="">WDECCountrySI</a>,
+	<a href="">WDECCountrySJ</a>,
+	<a href="">WDECCountrySK</a>,
+	<a href="">WDECCountrySL</a>,
+	<a href="">WDECCountrySM</a>,
+	<a href="">WDECCountrySN</a>,
+	<a href="">WDECCountrySO</a>,
+	<a href="">WDECCountrySR</a>,
+	<a href="">WDECCountrySS</a>,
+	<a href="">WDECCountryST</a>,
+	<a href="">WDECCountrySV</a>,
+	<a href="">WDECCountrySX</a>,
+	<a href="">WDECCountrySY</a>,
+	<a href="">WDECCountrySZ</a>,
+	<a href="">WDECCountryTC</a>,
+	<a href="">WDECCountryTD</a>,
+	<a href="">WDECCountryTF</a>,
+	<a href="">WDECCountryTG</a>,
+	<a href="">WDECCountryTH</a>,
+	<a href="">WDECCountryTJ</a>,
+	<a href="">WDECCountryTK</a>,
+	<a href="">WDECCountryTL</a>,
+	<a href="">WDECCountryTM</a>,
+	<a href="">WDECCountryTN</a>,
+	<a href="">WDECCountryTO</a>,
+	<a href="">WDECCountryTR</a>,
+	<a href="">WDECCountryTT</a>,
+	<a href="">WDECCountryTV</a>,
+	<a href="">WDECCountryTW</a>,
+	<a href="">WDECCountryTZ</a>,
+	<a href="">WDECCountryUA</a>,
+	<a href="">WDECCountryUG</a>,
+	<a href="">WDECCountryUM</a>,
+	<a href="">WDECCountryUS</a>,
+	<a href="">WDECCountryUY</a>,
+	<a href="">WDECCountryUZ</a>,
+	<a href="">WDECCountryVA</a>,
+	<a href="">WDECCountryVC</a>,
+	<a href="">WDECCountryVE</a>,
+	<a href="">WDECCountryVG</a>,
+	<a href="">WDECCountryVI</a>,
+	<a href="">WDECCountryVN</a>,
+	<a href="">WDECCountryVU</a>,
+	<a href="">WDECCountryWF</a>,
+	<a href="">WDECCountryWS</a>,
+	<a href="">WDECCountryXX</a>,
+	<a href="">WDECCountryYE</a>,
+	<a href="">WDECCountryYT</a>,
+	<a href="">WDECCountryZA</a>,
+	<a href="">WDECCountryZM</a>,
+	<a href="">WDECCountryZW</a>,
+	<a href="">WDECCountryTotalNumber</a>,
+};</code></pre>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="WDECCountryUndefined"></a><code>WDECCountryUndefined</code></dt>
+<dd>
+
+
+<p>Uninitialized or invalid value</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryAD"></a><code>WDECCountryAD</code></dt>
+<dd>
+
+
+<p>ANDORRA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryAE"></a><code>WDECCountryAE</code></dt>
+<dd>
+
+
+<p>UNITED ARAB EMIRATES</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryAF"></a><code>WDECCountryAF</code></dt>
+<dd>
+
+
+<p>AFGHANISTAN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryAG"></a><code>WDECCountryAG</code></dt>
+<dd>
+
+
+<p>ANTIGUA AND BARBUDA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryAI"></a><code>WDECCountryAI</code></dt>
+<dd>
+
+
+<p>ANGUILLA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryAL"></a><code>WDECCountryAL</code></dt>
+<dd>
+
+
+<p>ALBANIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryAM"></a><code>WDECCountryAM</code></dt>
+<dd>
+
+
+<p>ARMENIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryAN"></a><code>WDECCountryAN</code></dt>
+<dd>
+
+
+<p>NETHERLANDS ANTILLES</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryAO"></a><code>WDECCountryAO</code></dt>
+<dd>
+
+
+<p>ANGOLA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryAQ"></a><code>WDECCountryAQ</code></dt>
+<dd>
+
+
+<p>ANTARCTICA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryAR"></a><code>WDECCountryAR</code></dt>
+<dd>
+
+
+<p>ARGENTINA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryAS"></a><code>WDECCountryAS</code></dt>
+<dd>
+
+
+<p>AMERICAN SAMOA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryAT"></a><code>WDECCountryAT</code></dt>
+<dd>
+
+
+<p>AUSTRIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryAU"></a><code>WDECCountryAU</code></dt>
+<dd>
+
+
+<p>AUSTRALIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryAW"></a><code>WDECCountryAW</code></dt>
+<dd>
+
+
+<p>ARUBA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryAX"></a><code>WDECCountryAX</code></dt>
+<dd>
+
+
+<p>Åland Islands</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryAZ"></a><code>WDECCountryAZ</code></dt>
+<dd>
+
+
+<p>AZERBAIJAN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBA"></a><code>WDECCountryBA</code></dt>
+<dd>
+
+
+<p>BOSNIA AND HERZEGOVINA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBB"></a><code>WDECCountryBB</code></dt>
+<dd>
+
+
+<p>BARBADOS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBD"></a><code>WDECCountryBD</code></dt>
+<dd>
+
+
+<p>BANGLADESH</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBE"></a><code>WDECCountryBE</code></dt>
+<dd>
+
+
+<p>BELGIUM</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBF"></a><code>WDECCountryBF</code></dt>
+<dd>
+
+
+<p>BURKINA FASO</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBG"></a><code>WDECCountryBG</code></dt>
+<dd>
+
+
+<p>BULGARIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBH"></a><code>WDECCountryBH</code></dt>
+<dd>
+
+
+<p>BAHRAIN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBI"></a><code>WDECCountryBI</code></dt>
+<dd>
+
+
+<p>BURUNDI</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBJ"></a><code>WDECCountryBJ</code></dt>
+<dd>
+
+
+<p>BENIN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBL"></a><code>WDECCountryBL</code></dt>
+<dd>
+
+
+<p>Saint-Barthélemy</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBM"></a><code>WDECCountryBM</code></dt>
+<dd>
+
+
+<p>BERMUDA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBN"></a><code>WDECCountryBN</code></dt>
+<dd>
+
+
+<p>BRUNEI DARUSSALAM</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBO"></a><code>WDECCountryBO</code></dt>
+<dd>
+
+
+<p>BOLIVIA, PLURINATIONAL STATE OF</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBQ"></a><code>WDECCountryBQ</code></dt>
+<dd>
+
+
+<p>BONAIRE SINT EUSTATIUS AND SABA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBR"></a><code>WDECCountryBR</code></dt>
+<dd>
+
+
+<p>BRAZIL</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBS"></a><code>WDECCountryBS</code></dt>
+<dd>
+
+
+<p>BAHAMAS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBT"></a><code>WDECCountryBT</code></dt>
+<dd>
+
+
+<p>BHUTAN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBV"></a><code>WDECCountryBV</code></dt>
+<dd>
+
+
+<p>BOUVET ISLAND</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBW"></a><code>WDECCountryBW</code></dt>
+<dd>
+
+
+<p>BOTSWANA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBY"></a><code>WDECCountryBY</code></dt>
+<dd>
+
+
+<p>BELARUS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryBZ"></a><code>WDECCountryBZ</code></dt>
+<dd>
+
+
+<p>BELIZE</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryCA"></a><code>WDECCountryCA</code></dt>
+<dd>
+
+
+<p>CANADA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryCC"></a><code>WDECCountryCC</code></dt>
+<dd>
+
+
+<p>COCOS (KEELING) ISLANDS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryCD"></a><code>WDECCountryCD</code></dt>
+<dd>
+
+
+<p>CONGO, THE DEMOCRATIC REPUBLIC OF THE</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryCF"></a><code>WDECCountryCF</code></dt>
+<dd>
+
+
+<p>CENTRAL AFRICAN REPUBLIC</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryCG"></a><code>WDECCountryCG</code></dt>
+<dd>
+
+
+<p>CONGO</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryCH"></a><code>WDECCountryCH</code></dt>
+<dd>
+
+
+<p>SWITZERLAND</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryCI"></a><code>WDECCountryCI</code></dt>
+<dd>
+
+
+<p>Côte d’Ivoire</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryCK"></a><code>WDECCountryCK</code></dt>
+<dd>
+
+
+<p>COOK ISLANDS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryCL"></a><code>WDECCountryCL</code></dt>
+<dd>
+
+
+<p>CHILE</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryCM"></a><code>WDECCountryCM</code></dt>
+<dd>
+
+
+<p>CAMEROON</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryCN"></a><code>WDECCountryCN</code></dt>
+<dd>
+
+
+<p>CHINA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryCO"></a><code>WDECCountryCO</code></dt>
+<dd>
+
+
+<p>COLOMBIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryCR"></a><code>WDECCountryCR</code></dt>
+<dd>
+
+
+<p>COSTA RICA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryCU"></a><code>WDECCountryCU</code></dt>
+<dd>
+
+
+<p>CUBA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryCV"></a><code>WDECCountryCV</code></dt>
+<dd>
+
+
+<p>CAPE VERDE</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryCW"></a><code>WDECCountryCW</code></dt>
+<dd>
+
+
+<p>CURACAO</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryCX"></a><code>WDECCountryCX</code></dt>
+<dd>
+
+
+<p>CHRISTMAS ISLAND</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryCY"></a><code>WDECCountryCY</code></dt>
+<dd>
+
+
+<p>CYPRUS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryCZ"></a><code>WDECCountryCZ</code></dt>
+<dd>
+
+
+<p>CZECH REPUBLIC</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryDE"></a><code>WDECCountryDE</code></dt>
+<dd>
+
+
+<p>GERMANY</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryDJ"></a><code>WDECCountryDJ</code></dt>
+<dd>
+
+
+<p>DJIBOUTI</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryDK"></a><code>WDECCountryDK</code></dt>
+<dd>
+
+
+<p>DENMARK</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryDM"></a><code>WDECCountryDM</code></dt>
+<dd>
+
+
+<p>DOMINICA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryDO"></a><code>WDECCountryDO</code></dt>
+<dd>
+
+
+<p>DOMINICAN REPUBLIC</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryDZ"></a><code>WDECCountryDZ</code></dt>
+<dd>
+
+
+<p>ALGERIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryEC"></a><code>WDECCountryEC</code></dt>
+<dd>
+
+
+<p>ECUADOR</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryEE"></a><code>WDECCountryEE</code></dt>
+<dd>
+
+
+<p>ESTONIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryEG"></a><code>WDECCountryEG</code></dt>
+<dd>
+
+
+<p>EGYPT</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryEH"></a><code>WDECCountryEH</code></dt>
+<dd>
+
+
+<p>WESTERN SAHARA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryER"></a><code>WDECCountryER</code></dt>
+<dd>
+
+
+<p>ERITREA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryES"></a><code>WDECCountryES</code></dt>
+<dd>
+
+
+<p>SPAIN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryET"></a><code>WDECCountryET</code></dt>
+<dd>
+
+
+<p>ETHIOPIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryFI"></a><code>WDECCountryFI</code></dt>
+<dd>
+
+
+<p>FINLAND</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryFJ"></a><code>WDECCountryFJ</code></dt>
+<dd>
+
+
+<p>FIJI</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryFK"></a><code>WDECCountryFK</code></dt>
+<dd>
+
+
+<p>FALKLAND ISLANDS (MALVINAS)</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryFM"></a><code>WDECCountryFM</code></dt>
+<dd>
+
+
+<p>MICRONESIA, FEDERATED STATES OF</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryFO"></a><code>WDECCountryFO</code></dt>
+<dd>
+
+
+<p>FAROE ISLANDS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryFR"></a><code>WDECCountryFR</code></dt>
+<dd>
+
+
+<p>FRANCE</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryGA"></a><code>WDECCountryGA</code></dt>
+<dd>
+
+
+<p>GABON</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryGB"></a><code>WDECCountryGB</code></dt>
+<dd>
+
+
+<p>UNITED KINGDOM</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryGD"></a><code>WDECCountryGD</code></dt>
+<dd>
+
+
+<p>GRENADA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryGE"></a><code>WDECCountryGE</code></dt>
+<dd>
+
+
+<p>GEORGIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryGF"></a><code>WDECCountryGF</code></dt>
+<dd>
+
+
+<p>FRENCH GUIANA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryGG"></a><code>WDECCountryGG</code></dt>
+<dd>
+
+
+<p>GUERNSEY</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryGH"></a><code>WDECCountryGH</code></dt>
+<dd>
+
+
+<p>GHANA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryGI"></a><code>WDECCountryGI</code></dt>
+<dd>
+
+
+<p>GIBRALTAR</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryGL"></a><code>WDECCountryGL</code></dt>
+<dd>
+
+
+<p>GREENLAND</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryGM"></a><code>WDECCountryGM</code></dt>
+<dd>
+
+
+<p>GAMBIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryGN"></a><code>WDECCountryGN</code></dt>
+<dd>
+
+
+<p>GUINEA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryGP"></a><code>WDECCountryGP</code></dt>
+<dd>
+
+
+<p>GUADELOUPE</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryGQ"></a><code>WDECCountryGQ</code></dt>
+<dd>
+
+
+<p>EQUATORIAL GUINEA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryGR"></a><code>WDECCountryGR</code></dt>
+<dd>
+
+
+<p>GREECE</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryGS"></a><code>WDECCountryGS</code></dt>
+<dd>
+
+
+<p>SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryGT"></a><code>WDECCountryGT</code></dt>
+<dd>
+
+
+<p>GUATEMALA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryGU"></a><code>WDECCountryGU</code></dt>
+<dd>
+
+
+<p>GUAM</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryGW"></a><code>WDECCountryGW</code></dt>
+<dd>
+
+
+<p>GUINEA-BISSAU</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryGY"></a><code>WDECCountryGY</code></dt>
+<dd>
+
+
+<p>GUYANA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryHK"></a><code>WDECCountryHK</code></dt>
+<dd>
+
+
+<p>HONG KONG</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryHM"></a><code>WDECCountryHM</code></dt>
+<dd>
+
+
+<p>HEARD ISLAND AND MCDONALD ISLANDS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryHN"></a><code>WDECCountryHN</code></dt>
+<dd>
+
+
+<p>HONDURAS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryHR"></a><code>WDECCountryHR</code></dt>
+<dd>
+
+
+<p>CROATIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryHS"></a><code>WDECCountryHS</code></dt>
+<dd>
+
+
+<p>VATICAN CITY STATE</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryHT"></a><code>WDECCountryHT</code></dt>
+<dd>
+
+
+<p>HAITI</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryHU"></a><code>WDECCountryHU</code></dt>
+<dd>
+
+
+<p>HUNGARY</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryID"></a><code>WDECCountryID</code></dt>
+<dd>
+
+
+<p>INDONESIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryIE"></a><code>WDECCountryIE</code></dt>
+<dd>
+
+
+<p>IRELAND</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryIL"></a><code>WDECCountryIL</code></dt>
+<dd>
+
+
+<p>ISRAEL</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryIM"></a><code>WDECCountryIM</code></dt>
+<dd>
+
+
+<p>ISLE OF MAN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryIN"></a><code>WDECCountryIN</code></dt>
+<dd>
+
+
+<p>INDIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryIO"></a><code>WDECCountryIO</code></dt>
+<dd>
+
+
+<p>BRITISH INDIAN OCEAN TERRITORY</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryIQ"></a><code>WDECCountryIQ</code></dt>
+<dd>
+
+
+<p>IRAQ</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryIR"></a><code>WDECCountryIR</code></dt>
+<dd>
+
+
+<p>IRAN, ISLAMIC REPUBLIC OF</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryIS"></a><code>WDECCountryIS</code></dt>
+<dd>
+
+
+<p>ICELAND</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryIT"></a><code>WDECCountryIT</code></dt>
+<dd>
+
+
+<p>ITALY</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryJE"></a><code>WDECCountryJE</code></dt>
+<dd>
+
+
+<p>JERSEY</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryJM"></a><code>WDECCountryJM</code></dt>
+<dd>
+
+
+<p>JAMAICA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryJO"></a><code>WDECCountryJO</code></dt>
+<dd>
+
+
+<p>JORDAN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryJP"></a><code>WDECCountryJP</code></dt>
+<dd>
+
+
+<p>JAPAN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryKE"></a><code>WDECCountryKE</code></dt>
+<dd>
+
+
+<p>KENYA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryKG"></a><code>WDECCountryKG</code></dt>
+<dd>
+
+
+<p>KYRGYZSTAN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryKH"></a><code>WDECCountryKH</code></dt>
+<dd>
+
+
+<p>CAMBODIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryKI"></a><code>WDECCountryKI</code></dt>
+<dd>
+
+
+<p>KIRIBATI</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryKM"></a><code>WDECCountryKM</code></dt>
+<dd>
+
+
+<p>COMOROS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryKN"></a><code>WDECCountryKN</code></dt>
+<dd>
+
+
+<p>SAINT KITTS AND NEVIS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryKP"></a><code>WDECCountryKP</code></dt>
+<dd>
+
+
+<p>KOREA, DEMOCRATIC PEOPLE&rsquo;S REPUBLIC OF</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryKR"></a><code>WDECCountryKR</code></dt>
+<dd>
+
+
+<p>KOREA, REPUBLIC OF</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryKW"></a><code>WDECCountryKW</code></dt>
+<dd>
+
+
+<p>KUWAIT</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryKY"></a><code>WDECCountryKY</code></dt>
+<dd>
+
+
+<p>CAYMAN ISLANDS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryKZ"></a><code>WDECCountryKZ</code></dt>
+<dd>
+
+
+<p>KAZAKHSTAN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryLA"></a><code>WDECCountryLA</code></dt>
+<dd>
+
+
+<p>LAO PEOPLE&rsquo;S DEMOCRATIC REPUBLIC</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryLB"></a><code>WDECCountryLB</code></dt>
+<dd>
+
+
+<p>LEBANON</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryLC"></a><code>WDECCountryLC</code></dt>
+<dd>
+
+
+<p>SAINT LUCIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryLI"></a><code>WDECCountryLI</code></dt>
+<dd>
+
+
+<p>LIECHTENSTEIN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryLK"></a><code>WDECCountryLK</code></dt>
+<dd>
+
+
+<p>SRI LANKA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryLR"></a><code>WDECCountryLR</code></dt>
+<dd>
+
+
+<p>LIBERIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryLS"></a><code>WDECCountryLS</code></dt>
+<dd>
+
+
+<p>LESOTHO</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryLT"></a><code>WDECCountryLT</code></dt>
+<dd>
+
+
+<p>LITHUANIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryLU"></a><code>WDECCountryLU</code></dt>
+<dd>
+
+
+<p>LUXEMBOURG</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryLV"></a><code>WDECCountryLV</code></dt>
+<dd>
+
+
+<p>LATVIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryLY"></a><code>WDECCountryLY</code></dt>
+<dd>
+
+
+<p>LIBYAN ARAB JAMAHIRIYA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMA"></a><code>WDECCountryMA</code></dt>
+<dd>
+
+
+<p>MOROCCO</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMC"></a><code>WDECCountryMC</code></dt>
+<dd>
+
+
+<p>MONACO</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMD"></a><code>WDECCountryMD</code></dt>
+<dd>
+
+
+<p>MOLDOVA, REPUBLIC OF</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryME"></a><code>WDECCountryME</code></dt>
+<dd>
+
+
+<p>MONTENEGRO</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMF"></a><code>WDECCountryMF</code></dt>
+<dd>
+
+
+<p>SAINT MARTIN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMG"></a><code>WDECCountryMG</code></dt>
+<dd>
+
+
+<p>MADAGASCAR</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMH"></a><code>WDECCountryMH</code></dt>
+<dd>
+
+
+<p>MARSHALL ISLANDS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMK"></a><code>WDECCountryMK</code></dt>
+<dd>
+
+
+<p>MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryML"></a><code>WDECCountryML</code></dt>
+<dd>
+
+
+<p>MALI</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMM"></a><code>WDECCountryMM</code></dt>
+<dd>
+
+
+<p>MYANMAR</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMN"></a><code>WDECCountryMN</code></dt>
+<dd>
+
+
+<p>MONGOLIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMO"></a><code>WDECCountryMO</code></dt>
+<dd>
+
+
+<p>MACAO</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMP"></a><code>WDECCountryMP</code></dt>
+<dd>
+
+
+<p>NORTHERN MARIANA ISLANDS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMQ"></a><code>WDECCountryMQ</code></dt>
+<dd>
+
+
+<p>MARTINIQUE</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMR"></a><code>WDECCountryMR</code></dt>
+<dd>
+
+
+<p>MAURITANIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMS"></a><code>WDECCountryMS</code></dt>
+<dd>
+
+
+<p>MONTSERRAT</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMT"></a><code>WDECCountryMT</code></dt>
+<dd>
+
+
+<p>MALTA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMU"></a><code>WDECCountryMU</code></dt>
+<dd>
+
+
+<p>MAURITIUS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMV"></a><code>WDECCountryMV</code></dt>
+<dd>
+
+
+<p>MALDIVES</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMW"></a><code>WDECCountryMW</code></dt>
+<dd>
+
+
+<p>MALAWI</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMX"></a><code>WDECCountryMX</code></dt>
+<dd>
+
+
+<p>MEXICO</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMY"></a><code>WDECCountryMY</code></dt>
+<dd>
+
+
+<p>MALAYSIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryMZ"></a><code>WDECCountryMZ</code></dt>
+<dd>
+
+
+<p>MOZAMBIQUE</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryNA"></a><code>WDECCountryNA</code></dt>
+<dd>
+
+
+<p>NAMIBIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryNC"></a><code>WDECCountryNC</code></dt>
+<dd>
+
+
+<p>NEW CALEDONIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryNE"></a><code>WDECCountryNE</code></dt>
+<dd>
+
+
+<p>NIGER</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryNF"></a><code>WDECCountryNF</code></dt>
+<dd>
+
+
+<p>NORFOLK ISLAND</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryNG"></a><code>WDECCountryNG</code></dt>
+<dd>
+
+
+<p>NIGERIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryNI"></a><code>WDECCountryNI</code></dt>
+<dd>
+
+
+<p>NICARAGUA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryNL"></a><code>WDECCountryNL</code></dt>
+<dd>
+
+
+<p>NETHERLANDS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryNO"></a><code>WDECCountryNO</code></dt>
+<dd>
+
+
+<p>NORWAY</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryNP"></a><code>WDECCountryNP</code></dt>
+<dd>
+
+
+<p>NEPAL</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryNR"></a><code>WDECCountryNR</code></dt>
+<dd>
+
+
+<p>NAURU</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryNU"></a><code>WDECCountryNU</code></dt>
+<dd>
+
+
+<p>NIUE</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryNZ"></a><code>WDECCountryNZ</code></dt>
+<dd>
+
+
+<p>NEW ZEALAND</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryOM"></a><code>WDECCountryOM</code></dt>
+<dd>
+
+
+<p>OMAN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryPA"></a><code>WDECCountryPA</code></dt>
+<dd>
+
+
+<p>PANAMA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryPE"></a><code>WDECCountryPE</code></dt>
+<dd>
+
+
+<p>PERU</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryPF"></a><code>WDECCountryPF</code></dt>
+<dd>
+
+
+<p>FRENCH POLYNESIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryPG"></a><code>WDECCountryPG</code></dt>
+<dd>
+
+
+<p>PAPUA NEW GUINEA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryPH"></a><code>WDECCountryPH</code></dt>
+<dd>
+
+
+<p>PHILIPPINES</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryPK"></a><code>WDECCountryPK</code></dt>
+<dd>
+
+
+<p>PAKISTAN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryPL"></a><code>WDECCountryPL</code></dt>
+<dd>
+
+
+<p>POLAND</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryPM"></a><code>WDECCountryPM</code></dt>
+<dd>
+
+
+<p>SAINT PIERRE AND MIQUELON</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryPN"></a><code>WDECCountryPN</code></dt>
+<dd>
+
+
+<p>PITCAIRN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryPR"></a><code>WDECCountryPR</code></dt>
+<dd>
+
+
+<p>PUERTO RICO</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryPS"></a><code>WDECCountryPS</code></dt>
+<dd>
+
+
+<p>PALESTINIAN TERRITORY, OCCUPIED</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryPT"></a><code>WDECCountryPT</code></dt>
+<dd>
+
+
+<p>PORTUGAL</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryPW"></a><code>WDECCountryPW</code></dt>
+<dd>
+
+
+<p>PALAU</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryPY"></a><code>WDECCountryPY</code></dt>
+<dd>
+
+
+<p>PARAGUAY</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryQA"></a><code>WDECCountryQA</code></dt>
+<dd>
+
+
+<p>QATAR</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryRE"></a><code>WDECCountryRE</code></dt>
+<dd>
+
+
+<p>Réunion</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryRO"></a><code>WDECCountryRO</code></dt>
+<dd>
+
+
+<p>ROMANIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryRS"></a><code>WDECCountryRS</code></dt>
+<dd>
+
+
+<p>SERBIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryRU"></a><code>WDECCountryRU</code></dt>
+<dd>
+
+
+<p>RUSSIAN FEDERATION</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryRW"></a><code>WDECCountryRW</code></dt>
+<dd>
+
+
+<p>RWANDA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySA"></a><code>WDECCountrySA</code></dt>
+<dd>
+
+
+<p>SAUDI ARABIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySB"></a><code>WDECCountrySB</code></dt>
+<dd>
+
+
+<p>SOLOMON ISLANDS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySC"></a><code>WDECCountrySC</code></dt>
+<dd>
+
+
+<p>SEYCHELLES</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySD"></a><code>WDECCountrySD</code></dt>
+<dd>
+
+
+<p>SUDAN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySE"></a><code>WDECCountrySE</code></dt>
+<dd>
+
+
+<p>SWEDEN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySG"></a><code>WDECCountrySG</code></dt>
+<dd>
+
+
+<p>SINGAPORE</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySH"></a><code>WDECCountrySH</code></dt>
+<dd>
+
+
+<p>SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySI"></a><code>WDECCountrySI</code></dt>
+<dd>
+
+
+<p>SLOVENIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySJ"></a><code>WDECCountrySJ</code></dt>
+<dd>
+
+
+<p>SVALBARD AND JAN MAYEN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySK"></a><code>WDECCountrySK</code></dt>
+<dd>
+
+
+<p>SLOVAKIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySL"></a><code>WDECCountrySL</code></dt>
+<dd>
+
+
+<p>SIERRA LEONE</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySM"></a><code>WDECCountrySM</code></dt>
+<dd>
+
+
+<p>SAN MARINO</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySN"></a><code>WDECCountrySN</code></dt>
+<dd>
+
+
+<p>SENEGAL</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySO"></a><code>WDECCountrySO</code></dt>
+<dd>
+
+
+<p>SOMALIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySR"></a><code>WDECCountrySR</code></dt>
+<dd>
+
+
+<p>SURINAME</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySS"></a><code>WDECCountrySS</code></dt>
+<dd>
+
+
+<p>SOUTH SUDAN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryST"></a><code>WDECCountryST</code></dt>
+<dd>
+
+
+<p>SAO TOME AND PRINCIPE</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySV"></a><code>WDECCountrySV</code></dt>
+<dd>
+
+
+<p>EL SALVADOR</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySX"></a><code>WDECCountrySX</code></dt>
+<dd>
+
+
+<p>SINT MAARTEN (DUTCH PART)</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySY"></a><code>WDECCountrySY</code></dt>
+<dd>
+
+
+<p>SYRIAN ARAB REPUBLIC</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountrySZ"></a><code>WDECCountrySZ</code></dt>
+<dd>
+
+
+<p>SWAZILAND</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryTC"></a><code>WDECCountryTC</code></dt>
+<dd>
+
+
+<p>TURKS AND CAICOS ISLANDS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryTD"></a><code>WDECCountryTD</code></dt>
+<dd>
+
+
+<p>CHAD</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryTF"></a><code>WDECCountryTF</code></dt>
+<dd>
+
+
+<p>FRENCH SOUTHERN TERRITORIES</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryTG"></a><code>WDECCountryTG</code></dt>
+<dd>
+
+
+<p>TOGO</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryTH"></a><code>WDECCountryTH</code></dt>
+<dd>
+
+
+<p>THAILAND</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryTJ"></a><code>WDECCountryTJ</code></dt>
+<dd>
+
+
+<p>TAJIKISTAN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryTK"></a><code>WDECCountryTK</code></dt>
+<dd>
+
+
+<p>TOKELAU</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryTL"></a><code>WDECCountryTL</code></dt>
+<dd>
+
+
+<p>TIMOR-LESTE</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryTM"></a><code>WDECCountryTM</code></dt>
+<dd>
+
+
+<p>TURKMENISTAN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryTN"></a><code>WDECCountryTN</code></dt>
+<dd>
+
+
+<p>TUNISIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryTO"></a><code>WDECCountryTO</code></dt>
+<dd>
+
+
+<p>TONGA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryTR"></a><code>WDECCountryTR</code></dt>
+<dd>
+
+
+<p>TURKEY</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryTT"></a><code>WDECCountryTT</code></dt>
+<dd>
+
+
+<p>TRINIDAD AND TOBAGO</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryTV"></a><code>WDECCountryTV</code></dt>
+<dd>
+
+
+<p>TUVALU</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryTW"></a><code>WDECCountryTW</code></dt>
+<dd>
+
+
+<p>TAIWAN, PROVINCE OF CHINA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryTZ"></a><code>WDECCountryTZ</code></dt>
+<dd>
+
+
+<p>TANZANIA, UNITED REPUBLIC OF</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryUA"></a><code>WDECCountryUA</code></dt>
+<dd>
+
+
+<p>UKRAINE</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryUG"></a><code>WDECCountryUG</code></dt>
+<dd>
+
+
+<p>UGANDA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryUM"></a><code>WDECCountryUM</code></dt>
+<dd>
+
+
+<p>UNITED STATES MINOR OUTLYING ISLANDS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryUS"></a><code>WDECCountryUS</code></dt>
+<dd>
+
+
+<p>UNITED STATES</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryUY"></a><code>WDECCountryUY</code></dt>
+<dd>
+
+
+<p>URUGUAY</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryUZ"></a><code>WDECCountryUZ</code></dt>
+<dd>
+
+
+<p>UZBEKISTAN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryVA"></a><code>WDECCountryVA</code></dt>
+<dd>
+
+
+<p>HOLY SEE (VATICAN CITY STATE)</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryVC"></a><code>WDECCountryVC</code></dt>
+<dd>
+
+
+<p>SAINT VINCENT AND THE GRENADINES</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryVE"></a><code>WDECCountryVE</code></dt>
+<dd>
+
+
+<p>VENEZUELA, BOLIVARIAN REPUBLIC OF</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryVG"></a><code>WDECCountryVG</code></dt>
+<dd>
+
+
+<p>VIRGIN ISLANDS, BRITISH</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryVI"></a><code>WDECCountryVI</code></dt>
+<dd>
+
+
+<p>VIRGIN ISLANDS, U.S.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryVN"></a><code>WDECCountryVN</code></dt>
+<dd>
+
+
+<p>VIET NAM</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryVU"></a><code>WDECCountryVU</code></dt>
+<dd>
+
+
+<p>VANUATU</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryWF"></a><code>WDECCountryWF</code></dt>
+<dd>
+
+
+<p>WALLIS AND FUTUNA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryWS"></a><code>WDECCountryWS</code></dt>
+<dd>
+
+
+<p>SAMOA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryXX"></a><code>WDECCountryXX</code></dt>
+<dd>
+
+
+<p>NULL</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryYE"></a><code>WDECCountryYE</code></dt>
+<dd>
+
+
+<p>YEMEN</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryYT"></a><code>WDECCountryYT</code></dt>
+<dd>
+
+
+<p>MAYOTTE</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryZA"></a><code>WDECCountryZA</code></dt>
+<dd>
+
+
+<p>SOUTH AFRICA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryZM"></a><code>WDECCountryZM</code></dt>
+<dd>
+
+
+<p>ZAMBIA</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryZW"></a><code>WDECCountryZW</code></dt>
+<dd>
+
+
+<p>ZIMBABWE</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WDECCountryTotalNumber"></a><code>WDECCountryTotalNumber</code></dt>
+<dd>
+
+
+<p>Total number of values. It is used for validation and handled as invalid value</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WDECCountry.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">WDECCountry.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 Wirecard AG. All rights reserved. Updated: 2020-05-26</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
