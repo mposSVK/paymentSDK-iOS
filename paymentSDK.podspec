@@ -19,28 +19,41 @@ DESC
     s.authors          = { 'Mobile Payment' => 'mobile.payment@wirecard.com' }
     s.source           = { :git => 'https://github.com/wirecard/paymentSDK-iOS.git', :tag => s.version }
     s.platform         = :ios
-    s.ios.deployment_target = '11.0'
+    s.ios.deployment_target = '9.0'
+
     s.requires_arc     = true
 
     s.subspec 'All' do |ss|
+        ss.dependency            'paymentSDK/Core'
+        ss.dependency            'paymentSDK/CoreCard'
+        ss.dependency            'paymentSDK/Alipay'
         ss.dependency            'paymentSDK/ApplePay'
         ss.dependency            'paymentSDK/Card'
+        ss.dependency            'paymentSDK/CardScanner'
+        ss.dependency            'paymentSDK/CardScannerGallery'
         ss.dependency            'paymentSDK/PayPal'
         ss.dependency            'paymentSDK/SEPA'
+        ss.dependency            'paymentSDK/IBANScanner'
+        ss.dependency            'paymentSDK/IBANScannerGallery'
         ss.dependency            'paymentSDK/ZAPP'
+        ss.dependency            'paymentSDK/Scanner'
+        ss.dependency            'paymentSDK/PhotoGallery'
     end
 
     s.subspec 'Core' do |ss|
         ss.vendored_frameworks = 'eCom/WDeCom.framework'
         ss.resource            = 'eCom/WDeCom.framework/WDeCom.bundle'
 
-        ss.dependency            'AFNetworking', '~> 4.0.1'
-        ss.dependency            'CocoaLumberjack', '~> 3.6.1'
+        ss.dependency            'AFNetworking/Reachability', '~> 3.2.1'
+        ss.dependency            'AFNetworking/Serialization', '~> 3.2.1'
+        ss.dependency            'AFNetworking/Security', '~> 3.2.1'
+        ss.dependency            'AFNetworking/NSURLSession', '~> 3.2.1'
+        ss.dependency            'CocoaLumberjack', '~> 3.6.0'
         ss.ios.dependency        'Lockbox', '~> 3.0.6'
-        ss.dependency            'Mantle', '~> 2.1.1'
-        ss.ios.dependency        'MBProgressHUD', '~> 1.2.0'
+        ss.dependency            'Mantle', '~> 2.1.0'
+        ss.ios.dependency        'MBProgressHUD', '~> 1.1.0'
         ss.dependency            'libextobjc/EXTScope', '~> 0.6.0'
-        ss.ios.dependency        'TPKeyboardAvoiding', '~> 1.3.3'
+        ss.ios.dependency        'TPKeyboardAvoiding', '~> 1.3.2'
 
         ss.ios.frameworks      = 'Foundation', 'UIKit', 'Security'
         ss.libraries           = 'xml2'
@@ -139,21 +152,6 @@ DESC
         ss.dependency            'ZappMerchantLib', '~> 1.1.2'
     end
 
-    s.subspec 'Klarna-xcode-10.2-fat' do |sk|
-        sk.vendored_frameworks = 'eCom/WDeComKlarna.framework'
-        sk.resource            = 'eCom/WDeComKlarna.framework/WDeComKlarna.bundle'
-        sk.dependency            'paymentSDK/Core'
-        sk.dependency            'KlarnaMobileSDK/xcode-10.2-fat', '~> 2.0.14'
-    end
-
-    s.subspec 'Klarna-xcode-11.3-fat' do |sk|
-        sk.vendored_frameworks = 'eCom/WDeComKlarna.framework'
-        sk.resource            = 'eCom/WDeComKlarna.framework/WDeComKlarna.bundle'
-
-        sk.dependency            'paymentSDK/Core'
-        sk.dependency            'KlarnaMobileSDK/xcode-11.3-fat', '~> 2.0.14'
-    end
-
     s.subspec 'Klarna-xcode-11.4.1-fat' do |sk|
         sk.vendored_frameworks = 'eCom/WDeComKlarna.framework'
         sk.resource            = 'eCom/WDeComKlarna.framework/WDeComKlarna.bundle'
@@ -161,7 +159,5 @@ DESC
         sk.dependency            'paymentSDK/Core'
         sk.dependency            'KlarnaMobileSDK/xcode-11.4.1-fat', '~> 2.0.14'
     end
-
-      s.default_subspecs = 'All', 'Klarna-xcode-11.4.1-fat'
 
 end
