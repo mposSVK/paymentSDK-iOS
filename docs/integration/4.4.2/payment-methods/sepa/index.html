@@ -1,0 +1,788 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A lightweight mobile interface for Wirecard Payment Gateway">
+      
+      
+      
+        <link rel="canonical" href="https://wirecard.github.io/paymentSDK-iOS/integration/4.4.2/payment-methods/sepa/">
+      
+      
+        <meta name="author" content="paymentSDK Team">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>SEPA Direct Debit - paymentSDK iOS - 4.4.2</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.196e0c26.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#00bdd6">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,700%7CFira+Mono&display=fallback">
+        <style>body,input{font-family:"Titillium Web",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Fira Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="cyan" data-md-color-accent="deep-orange">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sepa" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://wirecard.github.io/paymentSDK-iOS/integration/4.4.2/" title="paymentSDK iOS - 4.4.2" class="md-header-nav__button md-logo" aria-label="paymentSDK iOS - 4.4.2">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            paymentSDK iOS - 4.4.2
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              SEPA Direct Debit
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://wirecard.github.io/paymentSDK-iOS/integration/4.4.2/" title="paymentSDK iOS - 4.4.2" class="md-nav__button md-logo" aria-label="paymentSDK iOS - 4.4.2">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    paymentSDK iOS - 4.4.2
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    <label class="md-nav__link" for="nav-3">
+      Payment Methods
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Payment Methods" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Payment Methods
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../card-payments/" class="md-nav__link">
+      Card Payments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../apple-pay/" class="md-nav__link">
+      Apple Pay
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../klarna/" class="md-nav__link">
+      Klarna
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pbba/" class="md-nav__link">
+      Pay by Bank app
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paypal/" class="md-nav__link">
+      PayPal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        SEPA Direct Debit
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      SEPA Direct Debit
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#supported-transaction-types" class="md-nav__link">
+    Supported Transaction Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-setup" class="md-nav__link">
+    Basic Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cocoapods" class="md-nav__link">
+    Cocoapods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-sepa-payment" class="md-nav__link">
+    Simple SEPA Payment
+  </a>
+  
+    <nav class="md-nav" aria-label="Simple SEPA Payment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customizing-sepa-payments" class="md-nav__link">
+    Customizing SEPA Payments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    <label class="md-nav__link" for="nav-4">
+      Customization
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Customization" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Customization
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../customization/theming/" class="md-nav__link">
+      User Interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../customization/localization/" class="md-nav__link">
+      Localization
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+    <label class="md-nav__link" for="nav-5">
+      Releases
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Releases" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Releases
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../releases/upgrading-to-4/" class="md-nav__link">
+      Upgrading to 4.x
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../releases/upgrading-to-3/" class="md-nav__link">
+      Upgrading to 3.x
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://github.com/wirecard/paymentSDK-iOS/releases" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../license/" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#supported-transaction-types" class="md-nav__link">
+    Supported Transaction Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-setup" class="md-nav__link">
+    Basic Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cocoapods" class="md-nav__link">
+    Cocoapods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-sepa-payment" class="md-nav__link">
+    Simple SEPA Payment
+  </a>
+  
+    <nav class="md-nav" aria-label="Simple SEPA Payment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customizing-sepa-payments" class="md-nav__link">
+    Customizing SEPA Payments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="sepa">SEPA<a class="headerlink" href="#sepa" title="Permanent link">&para;</a></h1>
+<h2 id="supported-transaction-types">Supported <a href="http://wirecard.github.io/paymentSDK-iOS/api/4.4.2/Constants/WDECTransactionType.html">Transaction Types</a><a class="headerlink" href="#supported-transaction-types" title="Permanent link">&para;</a></h2>
+<p>This payment method supports the following <a href="http://wirecard.github.io/paymentSDK-iOS/api/4.4.2/Constants/WDECTransactionType.html">transaction types</a>:</p>
+<ul>
+<li><strong><code>WDECTransactionTypeDebit</code></strong> - charges the specified amount from the account holder's bank account and marks it for immediate transfer.</li>
+<li><strong><code>WDECTransactionTypeAuthorization</code></strong> - places the account holder's funds on hold, pending future capture, re-authorization or void transaction.</li>
+<li><strong><code>WDECTransactionTypePendingDebit</code></strong> - charges the specified amount from the account holder's bank account and marks it for immediate transfer. The pending status indicates that additional processing/approval is required before the transaction is cleared.</li>
+</ul>
+<h2 id="basic-setup">Basic Setup<a class="headerlink" href="#basic-setup" title="Permanent link">&para;</a></h2>
+<h3 id="cocoapods">Cocoapods<a class="headerlink" href="#cocoapods" title="Permanent link">&para;</a></h3>
+<p>Add to your app's <code>Podfile</code> subspecs:</p>
+<div class="highlight"><pre><span></span><code><span class="n">pod</span> <span class="s1">&#39;paymentSDK/SEPA&#39;</span><span class="p">,</span>          <span class="s1">&#39;~&gt; 4.4.2&#39;</span>
+<span class="c1"># just by adding IBANScanner subspec consumers get option to scan IBAN</span>
+<span class="n">pod</span> <span class="s1">&#39;paymentSDK/IBANScanner&#39;</span><span class="p">,</span>   <span class="s1">&#39;~&gt; 4.4.2&#39;</span>
+</code></pre></div>
+<p>To make sure IBAN Scanner has permission before using camera to scan IBAN, follow the steps in Apple <a href="https://developer.apple.com/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_ios">documentation</a>. You need to include <a href="https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSCameraUsageDescription"><code>NSCameraUsageDescription</code></a> in your app's <code>Info.plist</code> file.</p>
+<h2 id="simple-sepa-payment">Simple SEPA Payment<a class="headerlink" href="#simple-sepa-payment" title="Permanent link">&para;</a></h2>
+<p>This is a code example for a basic SEPA payment:</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Swift</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="c1">// 1. Initialize client object</span>
+<span class="c1">// Parameters (hostname, merchantAccountID) may come from server to make it configurable.</span>
+
+<span class="k">do</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="kc">self</span><span class="p">.</span><span class="n">client</span> <span class="p">=</span> <span class="n">WDECClient</span><span class="p">.</span><span class="kd">init</span><span class="p">(</span><span class="n">hostname</span><span class="p">:</span> <span class="n">hostname</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+    <span class="c1">// the device is checked during initialization for jailbreak.</span>
+    <span class="c1">// It is risky to make payments on jailbroken devices.</span>
+    <span class="k">return</span>
+<span class="p">}</span>
+
+<span class="c1">// 2. Initialize payment object and set mandatory properties</span>
+<span class="c1">// Parameters (amount, currency, transactionType) shall be sent to server for validation or just provided by server</span>
+<span class="c1">// and used to generate signature. Signature MUST be generated on server side.</span>
+<span class="c1">// Signature doc: https://document-center.wirecard.com/display/PTD/Signature+v2</span>
+<span class="c1">// Secret Key shall never be stored in application.</span>
+
+<span class="kd">let</span> <span class="nv">payment</span> <span class="p">=</span> <span class="n">WDECSEPAPayment</span><span class="p">()</span>
+<span class="n">payment</span><span class="p">.</span><span class="n">merchantAccountID</span> <span class="p">=</span> <span class="n">merchantAccountID</span>  <span class="c1">// provided by merchant support</span>
+<span class="n">payment</span><span class="p">.</span><span class="n">requestID</span> <span class="p">=</span> <span class="n">requestID</span>                  <span class="c1">// generated on server; unique for merchantAccountID</span>
+<span class="n">payment</span><span class="p">.</span><span class="n">amount</span> <span class="p">=</span> <span class="bp">NSDecimalNumber</span><span class="p">(</span><span class="n">mantissa</span><span class="p">:</span> <span class="mi">199</span><span class="p">,</span> <span class="n">exponent</span><span class="p">:</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="n">isNegative</span><span class="p">:</span> <span class="n">NO</span><span class="p">)</span>
+<span class="n">payment</span><span class="p">.</span><span class="n">currency</span> <span class="p">=</span> <span class="s">&quot;EUR&quot;</span>
+<span class="n">payment</span><span class="p">.</span><span class="n">transactionType</span> <span class="p">=</span> <span class="p">.</span><span class="n">debit</span>
+<span class="n">payment</span><span class="p">.</span><span class="n">creditorID</span> <span class="p">=</span> <span class="n">creditorID</span>
+<span class="n">payment</span><span class="p">.</span><span class="n">mandateID</span> <span class="p">=</span> <span class="n">mandateID</span>
+<span class="n">payment</span><span class="p">.</span><span class="n">signature</span> <span class="p">=</span> <span class="n">signature</span>
+
+<span class="c1">// 3. Trigger the payment and handle response in payment completion block. </span>
+<span class="kc">self</span><span class="p">.</span><span class="n">client</span><span class="p">?.</span><span class="n">make</span><span class="p">(</span><span class="n">payment</span><span class="p">,</span> <span class="n">withCompletion</span><span class="p">:{(</span><span class="n">response</span><span class="p">:</span> <span class="n">WDECPaymentResponse</span><span class="p">?,</span><span class="n">error</span><span class="p">:</span> <span class="n">Error</span><span class="p">?)</span> <span class="k">in</span>
+    <span class="c1">// for each failure error object is provided;</span>
+    <span class="k">guard</span> <span class="kd">let</span> <span class="nv">error</span> <span class="p">=</span> <span class="n">error</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="p">}</span>
+    <span class="k">if</span> <span class="kd">let</span> <span class="nv">response</span> <span class="p">=</span> <span class="n">response</span> <span class="p">{</span>
+        <span class="kc">self</span><span class="p">.</span><span class="n">handleResponse</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">})</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Objective-C</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="c1">// 1. Initialize client object</span>
+<span class="c1">// Parameters (hostname, merchantAccountID) may come from server to make it configurable.</span>
+
+<span class="bp">NSError</span> <span class="o">*</span><span class="n">error</span> <span class="o">=</span> <span class="nb">nil</span><span class="p">;</span>
+<span class="nb">self</span><span class="p">.</span><span class="n">client</span> <span class="o">=</span> <span class="p">[[</span><span class="n">WDECClient</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithHostname</span><span class="p">:</span><span class="n">hostname</span> <span class="nl">error</span><span class="p">:</span><span class="o">&amp;</span><span class="n">error</span><span class="p">];</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// the device is checked during initialization for jailbreak.</span>
+    <span class="c1">// It is risky to make payments on jailbroken devices.</span>
+    <span class="k">return</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// 2. Initialize payment object and set mandatory properties</span>
+<span class="c1">// Parameters (amount, currency, transactionType) shall be sent to server for validation or just provided by server</span>
+<span class="c1">// and used to generate signature. Signature MUST be generated on server side.</span>
+<span class="c1">// Signature doc: https://document-center.wirecard.com/display/PTD/Signature+v2</span>
+<span class="c1">// Secret Key shall never be stored in application.</span>
+
+<span class="n">WDECSEPAPayment</span> <span class="o">*</span><span class="n">payment</span> <span class="o">=</span> <span class="p">[</span><span class="n">WDECSEPAPayment</span> <span class="n">new</span><span class="p">];</span>
+<span class="n">payment</span><span class="p">.</span><span class="n">merchantAccountID</span> <span class="o">=</span> <span class="n">merchantAccountID</span><span class="p">;</span>  <span class="c1">// provided by merchant support</span>
+<span class="n">payment</span><span class="p">.</span><span class="n">requestID</span> <span class="o">=</span> <span class="n">requestID</span><span class="p">;</span>                  <span class="c1">// generated on server; unique for merchantAccountID</span>
+<span class="n">payment</span><span class="p">.</span><span class="n">amount</span> <span class="o">=</span> <span class="p">[</span><span class="bp">NSDecimalNumber</span> <span class="nl">decimalNumberWithMantissa</span><span class="p">:</span><span class="mi">199</span> <span class="nl">exponent</span><span class="p">:</span><span class="mi">-2</span> <span class="nl">isNegative</span><span class="p">:</span><span class="nb">NO</span><span class="p">];</span>
+<span class="n">payment</span><span class="p">.</span><span class="n">currency</span> <span class="o">=</span> <span class="s">@&quot;EUR&quot;</span><span class="p">;</span>
+<span class="n">payment</span><span class="p">.</span><span class="n">transactionType</span> <span class="o">=</span> <span class="n">WDECTransactionTypeDebit</span><span class="p">;</span>
+<span class="n">payment</span><span class="p">.</span><span class="n">creditorID</span> <span class="o">=</span> <span class="n">creditorID</span>
+<span class="n">payment</span><span class="p">.</span><span class="n">mandateID</span> <span class="o">=</span> <span class="n">mandateID</span>
+<span class="n">payment</span><span class="p">.</span><span class="n">signature</span> <span class="o">=</span> <span class="n">signature</span><span class="p">;</span>
+
+<span class="c1">// 3. Create payment completion block to handle response</span>
+
+<span class="p">@</span><span class="n">weakify</span><span class="p">(</span><span class="nb">self</span><span class="p">);</span>
+<span class="n">WDECCompletionBlock</span> <span class="n">completionBlock</span> <span class="o">=</span> <span class="o">^</span><span class="p">(</span><span class="n">WDECPaymentResponse</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">response</span><span class="p">,</span> <span class="bp">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">@</span><span class="n">strongify</span><span class="p">(</span><span class="nb">self</span><span class="p">);</span>
+    <span class="c1">// for each failure error object is provided;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="p">[</span><span class="nb">self</span> <span class="nl">handleResponse</span><span class="p">:</span><span class="n">response</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="c1">// 4. Trigger the payment</span>
+<span class="p">[</span><span class="nb">self</span><span class="p">.</span><span class="n">client</span> <span class="nl">makePayment</span><span class="p">:</span><span class="n">payment</span> <span class="nl">withCompletion</span><span class="p">:</span><span class="n">completionBlock</span><span class="p">];</span>
+</code></pre></div>
+</div>
+</div>
+<h3 id="customizing-sepa-payments">Customizing SEPA Payments<a class="headerlink" href="#customizing-sepa-payments" title="Permanent link">&para;</a></h3>
+<p>To change colors within the SDK, set properties of the components, that conforms to UIAppearance protocol. Changing any of these will affect every module used in the SDK.</p>
+<p><img alt="SEPA Screen" src="../images/sepa_customization.png" /></p>
+<ol>
+<li><code>WDECView</code></li>
+<li><code>WDECCancelButton</code></li>
+<li><code>WDECSubmitButton</code></li>
+<li><code>WDECCancelButtonImage</code></li>
+<li><code>WDECAmountLabel</code></li>
+<li><code>WDECNavigationBar</code></li>
+<li><code>WDECTextView</code></li>
+<li><code>WDECImageView</code></li>
+<li><code>WDECTextField</code></li>
+<li><code>WDECSwitch</code></li>
+</ol>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../paypal/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                PayPal
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../customization/theming/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                User Interface
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © 2020 by Wirecard AG
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/wirecard/paymentSDK-iOS" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ['tabs'],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

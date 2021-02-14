@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>WDECPayment Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">WDeCom </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Wirecard AG</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/)">)</option>
+		
+		<option value="//api/name/IPAddress">IPAddress</option>
+		
+		<option value="//api/name/accountHolder">accountHolder</option>
+		
+		<option value="//api/name/additionalProviderData">additionalProviderData</option>
+		
+		<option value="//api/name/airlineIndustry">airlineIndustry</option>
+		
+		<option value="//api/name/amount">amount</option>
+		
+		<option value="//api/name/appScheme">appScheme</option>
+		
+		<option value="//api/name/cardData">cardData</option>
+		
+		<option value="//api/name/consumerID">consumerID</option>
+		
+		<option value="//api/name/currency">currency</option>
+		
+		<option value="//api/name/instrumentCountry">instrumentCountry</option>
+		
+		<option value="//api/name/isoTransactionType">isoTransactionType</option>
+		
+		<option value="//api/name/locale">locale</option>
+		
+		<option value="//api/name/loyaltyCard">loyaltyCard</option>
+		
+		<option value="//api/name/merchantAccountID">merchantAccountID</option>
+		
+		<option value="//api/name/merchantAccountResolverCategory">merchantAccountResolverCategory</option>
+		
+		<option value="//api/name/merchantRiskIndicator">merchantRiskIndicator</option>
+		
+		<option value="//api/name/notifications">notifications</option>
+		
+		<option value="//api/name/order">order</option>
+		
+		<option value="//api/name/parentTransactionID">parentTransactionID</option>
+		
+		<option value="//api/name/requestID">requestID</option>
+		
+		<option value="//api/name/shipping">shipping</option>
+		
+		<option value="//api/name/signature">signature</option>
+		
+		<option value="//api/name/transactionType">transactionType</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/initWithMerchantAccountID:requestID:signature:">- initWithMerchantAccountID:requestID:signature:</option>
+		
+		<option value="//api/name/initWithMerchantAccountID:requestID:transactionType:amount:currency:signature:">- initWithMerchantAccountID:requestID:transactionType:amount:currency:signature:</option>
+		
+		<option value="//api/name/notificationForState:">- notificationForState:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">WDECPayment Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>WDECPayment.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Initialization WDECPayment object is useful only for [WDECClient checkPayment:] method.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/signature" title="signature"></a>
+	<h3 class="method-title"><code><a href="#//api/name/signature">&nbsp;&nbsp;signature</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>2nd generation signature. Authorize client to process the transaction. checkPayment works only with this signature.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, nonnull) NSString *signature</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>It is mandatory. It supersedes requestSignature and requestTimestamp.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/merchantAccountID" title="merchantAccountID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/merchantAccountID">&nbsp;&nbsp;merchantAccountID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unique identifier assigned for every Merchant Account.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nonnull) NSString *merchantAccountID</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>It is mandatory.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/merchantAccountResolverCategory" title="merchantAccountResolverCategory"></a>
+	<h3 class="method-title"><code><a href="#//api/name/merchantAccountResolverCategory">&nbsp;&nbsp;merchantAccountResolverCategory</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Category used by frontend merchant to resolve internal merchant for processing payment.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nullable) NSString *merchantAccountResolverCategory</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>It is optional.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestID" title="requestID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestID">&nbsp;&nbsp;requestID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unique identifier associated with the transaction, which is created by the merchant.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nonnull) NSString *requestID</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>It is mandatory.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/amount" title="amount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/amount">&nbsp;&nbsp;amount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The only amount that accompanies the transaction when it is created and/or requested.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nullable) NSDecimalNumber *amount</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For transactionType WDECTransactionTypeAuthorizationOnly the only valid value is [NSDecimalNumber zero].
+It is mandatory.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/)" title=")"></a>
+	<h3 class="method-title"><code><a href="#//api/name/)">&nbsp;&nbsp;)</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Currency in which the transaction is processed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) WDECCurrency amountCurrency DEPRECATED_MSG_ATTRIBUTE ( &quot;Use currency property instead&quot; )</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This property is deprecated, use NSString *<a href="#//api/name/currency">currency</a> instead.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currency" title="currency"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currency">&nbsp;&nbsp;currency</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Currency in which the transaction is processed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nullable) NSString *currency</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>It is mandatory. Exaples: &ldquo;EUR&rdquo;, &ldquo;GBP&rdquo;, &ldquo;USD&rdquo;, &hellip;</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transactionType" title="transactionType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transactionType">&nbsp;&nbsp;transactionType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Determines transaction processing behaviour.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) WDECTransactionType transactionType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>It is mandatory.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/accountHolder" title="accountHolder"></a>
+	<h3 class="method-title"><code><a href="#//api/name/accountHolder">&nbsp;&nbsp;accountHolder</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Customer&rsquo;s account information.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nullable) WDECCustomerData *accountHolder</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>It is optional.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shipping" title="shipping"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shipping">&nbsp;&nbsp;shipping</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Customer&rsquo;s shipping information</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nullable) WDECCustomerData *shipping</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>It is optional.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/order" title="order"></a>
+	<h3 class="method-title"><code><a href="#//api/name/order">&nbsp;&nbsp;order</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Customer&rsquo;s order information.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nullable) WDECOrder *order</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>It is optional.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notifications" title="notifications"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notifications">&nbsp;&nbsp;notifications</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifications configuration</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nullable) NSArray&lt;WDECNotification*&gt; *notifications</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>It is optional.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/IPAddress" title="IPAddress"></a>
+	<h3 class="method-title"><code><a href="#//api/name/IPAddress">&nbsp;&nbsp;IPAddress</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The IP Address of the Customer as recorded by the entity receiving the Transaction Attempt from the Customer</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nullable) NSString *IPAddress</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>It is optional.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/locale" title="locale"></a>
+	<h3 class="method-title"><code><a href="#//api/name/locale">&nbsp;&nbsp;locale</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the user&rsquo;s language and any special variant preferences that the user wants to see in their user interface.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) WDECLocale locale</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Typically used by <a href="../Classes/WDECPayPalPayment.html">WDECPayPalPayment</a> and 3D Secure WDCardPayment HTML formulars.
+It is optional.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/airlineIndustry" title="airlineIndustry"></a>
+	<h3 class="method-title"><code><a href="#//api/name/airlineIndustry">&nbsp;&nbsp;airlineIndustry</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Airline industry</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nullable) WDECAirlineIndustry *airlineIndustry</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Airline industry</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/merchantRiskIndicator" title="merchantRiskIndicator"></a>
+	<h3 class="method-title"><code><a href="#//api/name/merchantRiskIndicator">&nbsp;&nbsp;merchantRiskIndicator</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Merchant&rsquo;s assessment of the level of fraud risk for the specific authentication for both the cardholder and   the authentication being conducted.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nullable) WDECMerchantRiskIndicator *merchantRiskIndicator</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Merchant&rsquo;s assessment of the level of fraud risk for the specific authentication for both the cardholder and   the authentication being conducted.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isoTransactionType" title="isoTransactionType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isoTransactionType">&nbsp;&nbsp;isoTransactionType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Identifies the type of transaction being authenticated. The values are derived from ISO 8583.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) WDECIsoTransactionType isoTransactionType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Identifies the type of transaction being authenticated. The values are derived from ISO 8583.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/parentTransactionID" title="parentTransactionID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/parentTransactionID">&nbsp;&nbsp;parentTransactionID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>transaction identifier of previous transaction gathered by <a href="../Classes/WDECPaymentResponse.html#//api/name/transactionIdentifier">[WDECPaymentResponse transactionIdentifier]</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nullable) NSString *parentTransactionID</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>It is used with referenced transactions: WDECTransactionTypeCaptureAuthorization, WDECTransactionTypeReferencedAuthorization, WDECTransactionTypeReferencedPurchase, WDECTransactionTypeRefundCapture, WDECTransactionTypeRefundPurchase and WDECTransactionTypeVoidAuthorization</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/appScheme" title="appScheme"></a>
+	<h3 class="method-title"><code><a href="#//api/name/appScheme">&nbsp;&nbsp;appScheme</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>App scheme which is configured in Info.plist and associated with your app. It is used to redirect consumers from the banking apps or websites to your app.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nonnull) NSString *appScheme</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loyaltyCard" title="loyaltyCard"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loyaltyCard">&nbsp;&nbsp;loyaltyCard</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Loyalty card information</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nullable) WDECLoyaltyCard *loyaltyCard</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Typically used by card for WDECTransactionTypeEnrollment transaction</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cardData" title="cardData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cardData">&nbsp;&nbsp;cardData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Extre card data informations</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nullable) WDECCardData *cardData</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Typically used by card for WDECTransactionTypeEnrollment transaction</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/instrumentCountry" title="instrumentCountry"></a>
+	<h3 class="method-title"><code><a href="#//api/name/instrumentCountry">&nbsp;&nbsp;instrumentCountry</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Instrument Country</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) WDECCountry instrumentCountry</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/consumerID" title="consumerID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/consumerID">&nbsp;&nbsp;consumerID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Consumer ID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nullable) NSString *consumerID</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Typically used by card for WDECTransactionTypeEnrollment transaction. It&rsquo;s required field for transaction without acount holder identification data (email, phone)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/additionalProviderData" title="additionalProviderData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/additionalProviderData">&nbsp;&nbsp;additionalProviderData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Extre provider data informations</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nullable) WDECAdditionalProviderData *additionalProviderData</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Typically used by payment method WDECKlarnaPaymentMethod</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithMerchantAccountID:requestID:transactionType:amount:currency:signature:" title="initWithMerchantAccountID:requestID:transactionType:amount:currency:signature:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithMerchantAccountID:requestID:transactionType:amount:currency:signature:">&ndash;&nbsp;initWithMerchantAccountID:requestID:transactionType:amount:currency:signature:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>initialize payment with mandatory parameters</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable instancetype)initWithMerchantAccountID:(nonnull NSString *)<em>merchantAccountID</em> requestID:(nonnull NSString *)<em>requestID</em> transactionType:(WDECTransactionType)<em>transactionType</em> amount:(nullable NSDecimalNumber *)<em>amount</em> currency:(nullable NSString *)<em>currency</em> signature:(nonnull NSString *)<em>signature</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>merchantAccountID</code></th>
+						<td><p>Unique identifier assigned for every Merchant Account</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>requestID</code></th>
+						<td><p>Unique identifier associated with the transaction, which is created by the merchant</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>transactionType</code></th>
+						<td><p>determines transaction processing behaviour</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>amount</code></th>
+						<td><p>The only <a href="#//api/name/amount">amount</a> that accompanies the transaction when it is created and/or requested</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>currency</code></th>
+						<td><p>in which the transaction is processed</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>signature</code></th>
+						<td><p>2nd generation <a href="#//api/name/signature">signature</a>. Authorize client to process the transaction</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns payment object for <a href="../Classes/WDECClient.html">WDECClient</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>you can use WDECTransactionTypeUndefined and nil amount/<a href="#//api/name/currency">currency</a> to checkPayment</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithMerchantAccountID:requestID:signature:" title="initWithMerchantAccountID:requestID:signature:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithMerchantAccountID:requestID:signature:">&ndash;&nbsp;initWithMerchantAccountID:requestID:signature:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>initialize payment with mandatory parameters for checkPayment</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable instancetype)initWithMerchantAccountID:(nonnull NSString *)<em>merchantAccountID</em> requestID:(nonnull NSString *)<em>requestID</em> signature:(nonnull NSString *)<em>signature</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>merchantAccountID</code></th>
+						<td><p>Unique identifier assigned for every Merchant Account</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>requestID</code></th>
+						<td><p>Unique identifier associated with the transaction, which is created by the merchant</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>signature</code></th>
+						<td><p>2nd generation <a href="#//api/name/signature">signature</a>. Authorize client to process the transaction</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns payment object for <a href="../Classes/WDECClient.html">WDECClient</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>It is useful for [WDECClient checkPayment:].</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notificationForState:" title="notificationForState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notificationForState:">&ndash;&nbsp;notificationForState:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the notification for transaction state.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable WDECNotification *)notificationForState:(WDECTransactionState)<em>state</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>state</code></th>
+						<td><p>The transaction state defined by <a href="../Constants/WDECTransactionState.html">WDECTransactionState</a> enumaration</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns notification or nil if no associated notification.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WDECPayment.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 Wirecard AG. All rights reserved. Updated: 2020-12-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
